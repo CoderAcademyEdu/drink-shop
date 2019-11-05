@@ -1,0 +1,1190 @@
+[
+  {
+    "__docId__": 1,
+    "kind": "external",
+    "name": "Infinity",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Infinity",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Infinity",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 2,
+    "kind": "external",
+    "name": "NaN",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/NaN",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~NaN",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 3,
+    "kind": "external",
+    "name": "undefined",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/undefined",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~undefined",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 4,
+    "kind": "external",
+    "name": "null",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~null",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 5,
+    "kind": "external",
+    "name": "Object",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Object",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 6,
+    "kind": "external",
+    "name": "object",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~object",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 7,
+    "kind": "external",
+    "name": "Function",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Function",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 8,
+    "kind": "external",
+    "name": "function",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~function",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 9,
+    "kind": "external",
+    "name": "Boolean",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Boolean",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 10,
+    "kind": "external",
+    "name": "boolean",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~boolean",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 11,
+    "kind": "external",
+    "name": "Symbol",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Symbol",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Symbol",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 12,
+    "kind": "external",
+    "name": "Error",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Error",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Error",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 13,
+    "kind": "external",
+    "name": "EvalError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/EvalError",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~EvalError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 14,
+    "kind": "external",
+    "name": "InternalError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/InternalError",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~InternalError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 15,
+    "kind": "external",
+    "name": "RangeError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RangeError",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~RangeError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 16,
+    "kind": "external",
+    "name": "ReferenceError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/ReferenceError",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~ReferenceError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 17,
+    "kind": "external",
+    "name": "SyntaxError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/SyntaxError",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~SyntaxError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 18,
+    "kind": "external",
+    "name": "TypeError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/TypeError",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~TypeError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 19,
+    "kind": "external",
+    "name": "URIError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/URIError",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~URIError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 20,
+    "kind": "external",
+    "name": "Number",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Number",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 21,
+    "kind": "external",
+    "name": "number",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~number",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 22,
+    "kind": "external",
+    "name": "Date",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Date",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 23,
+    "kind": "external",
+    "name": "String",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~String",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 24,
+    "kind": "external",
+    "name": "string",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~string",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 25,
+    "kind": "external",
+    "name": "RegExp",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~RegExp",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 26,
+    "kind": "external",
+    "name": "Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 27,
+    "kind": "external",
+    "name": "Int8Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Int8Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Int8Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 28,
+    "kind": "external",
+    "name": "Uint8Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint8Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Uint8Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 29,
+    "kind": "external",
+    "name": "Uint8ClampedArray",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint8ClampedArray",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Uint8ClampedArray",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 30,
+    "kind": "external",
+    "name": "Int16Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Int16Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Int16Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 31,
+    "kind": "external",
+    "name": "Uint16Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint16Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Uint16Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 32,
+    "kind": "external",
+    "name": "Int32Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Int32Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Int32Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 33,
+    "kind": "external",
+    "name": "Uint32Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint32Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Uint32Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 34,
+    "kind": "external",
+    "name": "Float32Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Float32Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Float32Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 35,
+    "kind": "external",
+    "name": "Float64Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Float64Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Float64Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 36,
+    "kind": "external",
+    "name": "Map",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Map",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 37,
+    "kind": "external",
+    "name": "Set",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Set",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 38,
+    "kind": "external",
+    "name": "WeakMap",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WeakMap",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~WeakMap",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 39,
+    "kind": "external",
+    "name": "WeakSet",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WeakSet",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~WeakSet",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 40,
+    "kind": "external",
+    "name": "ArrayBuffer",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/ArrayBuffer",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~ArrayBuffer",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 41,
+    "kind": "external",
+    "name": "DataView",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/DataView",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~DataView",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 42,
+    "kind": "external",
+    "name": "JSON",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~JSON",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 43,
+    "kind": "external",
+    "name": "Promise",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Promise",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 44,
+    "kind": "external",
+    "name": "Generator",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Generator",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Generator",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 45,
+    "kind": "external",
+    "name": "GeneratorFunction",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/GeneratorFunction",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~GeneratorFunction",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 46,
+    "kind": "external",
+    "name": "Reflect",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Reflect",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Reflect",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 47,
+    "kind": "external",
+    "name": "Proxy",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Proxy",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Proxy",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 48,
+    "kind": "file",
+    "name": "src/drinkshop.js",
+    "content": "/**\n * A product\n * @typedef {Object} product\n * @property {number} id - an unique id number for the product\n * @property {string} title - the name of a product\n * @property {number} price - the price of a product in AUD to two decimal places\n */\n\n/**\n * A customer\n * @typedef {Object} customer\n * @property {string} firstName - the first given name of the customer\n * @property {string} lastName - the surname of the customer\n * @property {address} address - the customer's {@link address} for billing and delivery purposes\n * @property {order[]} orders - an array of {@link order}s the customer has made\n * @property {string} customerNotes - a string containing any notes about the customer\n*/\n\n/**\n * An address\n * @typedef {Object} address\n * @property {number} streetNumber - the alphanumeric indicator for a property\n * @property {string} streetName - the name of the street on which the customer's property is\n * @property {string} city - the city in which the customer's property is\n * @property {number} postcode - the government postal code for the area in which the customer's property resides\n */\n\n/**\n * An order\n * @typedef {Object} order\n * @property {number} id - a unique id number for the order\n * @property {string} status - an indicator of the status of the delivery such as delivered, processing, cancelled\n * @property {item[]} items - an array of {@link item}s\n * @property {string} notes - an arbitrary note from the customer regarding delivery of the order\n */\n\n/**\n * An item which is part of an order\n * @typedef {Object} item\n * @property {number} productId - a unique numeric id for a product\n * @property {number} quantity - a number representing the quantity of the product for the order\n */\nconst shopData = {} // Add JSON to this variable\n\n/**\n * Returns the title of the shop\n * @return {string} - the title of the shop\n */\nfunction shopTitle() {\n    // Return the shop title (you have access to the shop object from here)\n}\n\n/**\n * Coverts a string to uppercase\n *  @param {string} inputString - a string to be converted to uppercase\n */\nfunction upperCase(inputString) {\n    // Return an uppercase version of string\n}\n\n/**\n * Returns the shop title in uppercase.\n * @return {string} an uppercase string\n */\nfunction upperCaseShopTitle() {\n    // Return an uppercase shop title.\n    // Don't repeat yourself. Use the two functions you just built!\n}\n\n/**\n * takes a `productId` and returns the product corresponding to that id.\n * @param {number} productId - an id for a product\n * @return {Object} - returns a product object\n */\nfunction productById(productId) {\n    // Return a specific product object\n}\n\n/**\n * takes a `productId` and returns the price of the product corresponding to that id.\n * @param {number} productId - an id for a product\n * @return {number} - returns a cost in AUD to two decimal places\n */\nfunction productCost(productId) {\n    // given a product id, return its cost. DRY ;)\n}\n\n/**\n * returns an customer address in a format appropriate for putting on an envelope\n * @param {string} customerEmail - a customer email which is the key for a customer record\n * @return {address} returns a {@link address} in a format appropriate for putting on an envelope\n *\n */\nfunction formatAddress(customerEmail) {\n    // return(drinkShop.customers.'jane@doe.com'.address.(streetNumber, street, city, postcode))\n    // Given a user's email, return their address in the format:\n    // streetNumber street, city, postcode\n    // E.g. 10 Amelia St, Sydney, 2000\n    // Hint: some destructuring might save you a few lines.\n}\n\n/**\n * returns the total cost of an order which is the sum of all products contained in an order\n * @param {string} customerEmail - a customer email which is the key for a customer record\n * @param {number} orderId - an id number corresponding to an order\n * @return {number} the total cost of the order in AUD to two decimal places\n */\nfunction totalCost(customerEmail, orderId) {\n    // Return the total cost of an order.\n}\n\n/**\n * adds a product to the products object\n * @param {number} id - a unique numeric id for a product\n * @param {string} title - the title of the product\n * @param {number} price - the price of the product in AUD to two decimal places\n */\nfunction addProduct(id, title, price) {\n    // Add a product to the shop.\n}\n\n/**\n * updates the price of a product in the products object\n * @param {number} id - the id for a product in the products object\n * @param {number} newPrice - the new price for a product in AUD to two decimal places\n */\nfunction updateProductPrice(id, newPrice) {\n    // Update the price of a specific product\n}\n\n\nmodule.exports = {\n    shopTitle: shopTitle(),\n    upperCase: upperCase(),\n    upperCaseShopTitle: upperCaseShopTitle(),\n    productById: productById(),\n    productCost: productCost(),\n    formatAddress: formatAddress(),\n    totalCost: totalCost(),\n    addProduct: addProduct(),\n    updateProductPrice: updateProductPrice()\n}\n\n",
+    "static": true,
+    "longname": "/Users/nc/workspace/scratch/drink-shop/src/drinkshop.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 49,
+    "kind": "typedef",
+    "name": "product",
+    "memberof": "src/drinkshop.js",
+    "static": true,
+    "longname": "src/drinkshop.js~product",
+    "access": "public",
+    "description": "A product",
+    "properties": [
+      {
+        "nullable": null,
+        "types": [
+          "number"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "id",
+        "description": "an unique id number for the product"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "title",
+        "description": "the name of a product"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "number"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "price",
+        "description": "the price of a product in AUD to two decimal places"
+      }
+    ],
+    "type": {
+      "types": [
+        "Object"
+      ],
+      "optional": false,
+      "name": "product"
+    }
+  },
+  {
+    "__docId__": 50,
+    "kind": "typedef",
+    "name": "customer",
+    "memberof": "src/drinkshop.js",
+    "static": true,
+    "longname": "src/drinkshop.js~customer",
+    "access": "public",
+    "description": "A customer",
+    "properties": [
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "firstName",
+        "description": "the first given name of the customer"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "lastName",
+        "description": "the surname of the customer"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "address"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "address",
+        "description": "the customer's {@link address} for billing and delivery purposes"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "order[]"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "orders",
+        "description": "an array of {@link order}s the customer has made"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "customerNotes",
+        "description": "a string containing any notes about the customer"
+      }
+    ],
+    "type": {
+      "types": [
+        "Object"
+      ],
+      "optional": false,
+      "name": "customer"
+    }
+  },
+  {
+    "__docId__": 51,
+    "kind": "typedef",
+    "name": "address",
+    "memberof": "src/drinkshop.js",
+    "static": true,
+    "longname": "src/drinkshop.js~address",
+    "access": "public",
+    "description": "An address",
+    "properties": [
+      {
+        "nullable": null,
+        "types": [
+          "number"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "streetNumber",
+        "description": "the alphanumeric indicator for a property"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "streetName",
+        "description": "the name of the street on which the customer's property is"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "city",
+        "description": "the city in which the customer's property is"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "number"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "postcode",
+        "description": "the government postal code for the area in which the customer's property resides"
+      }
+    ],
+    "type": {
+      "types": [
+        "Object"
+      ],
+      "optional": false,
+      "name": "address"
+    }
+  },
+  {
+    "__docId__": 52,
+    "kind": "typedef",
+    "name": "order",
+    "memberof": "src/drinkshop.js",
+    "static": true,
+    "longname": "src/drinkshop.js~order",
+    "access": "public",
+    "description": "An order",
+    "properties": [
+      {
+        "nullable": null,
+        "types": [
+          "number"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "id",
+        "description": "a unique id number for the order"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "status",
+        "description": "an indicator of the status of the delivery such as delivered, processing, cancelled"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "item[]"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "items",
+        "description": "an array of {@link item}s"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "notes",
+        "description": "an arbitrary note from the customer regarding delivery of the order"
+      }
+    ],
+    "type": {
+      "types": [
+        "Object"
+      ],
+      "optional": false,
+      "name": "order"
+    }
+  },
+  {
+    "__docId__": 53,
+    "kind": "typedef",
+    "name": "item",
+    "memberof": "src/drinkshop.js",
+    "static": true,
+    "longname": "src/drinkshop.js~item",
+    "access": "public",
+    "description": "An item which is part of an order",
+    "lineNumber": 43,
+    "properties": [
+      {
+        "nullable": null,
+        "types": [
+          "number"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "productId",
+        "description": "a unique numeric id for a product"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "number"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "quantity",
+        "description": "a number representing the quantity of the product for the order"
+      }
+    ],
+    "type": {
+      "types": [
+        "Object"
+      ],
+      "optional": false,
+      "name": "item"
+    }
+  },
+  {
+    "__docId__": 54,
+    "kind": "function",
+    "name": "shopTitle",
+    "memberof": "src/drinkshop.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/drinkshop.js~shopTitle",
+    "access": "public",
+    "export": false,
+    "importPath": "drink-shop/src/drinkshop.js",
+    "importStyle": null,
+    "description": "Returns the title of the shop",
+    "lineNumber": 49,
+    "return": {
+      "nullable": null,
+      "types": [
+        "string"
+      ],
+      "spread": false,
+      "description": "the title of the shop"
+    },
+    "params": []
+  },
+  {
+    "__docId__": 55,
+    "kind": "function",
+    "name": "upperCase",
+    "memberof": "src/drinkshop.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/drinkshop.js~upperCase",
+    "access": "public",
+    "export": false,
+    "importPath": "drink-shop/src/drinkshop.js",
+    "importStyle": null,
+    "description": "Coverts a string to uppercase",
+    "lineNumber": 57,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "inputString",
+        "description": "a string to be converted to uppercase"
+      }
+    ],
+    "return": null
+  },
+  {
+    "__docId__": 56,
+    "kind": "function",
+    "name": "upperCaseShopTitle",
+    "memberof": "src/drinkshop.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/drinkshop.js~upperCaseShopTitle",
+    "access": "public",
+    "export": false,
+    "importPath": "drink-shop/src/drinkshop.js",
+    "importStyle": null,
+    "description": "Returns the shop title in uppercase.",
+    "lineNumber": 65,
+    "return": {
+      "nullable": null,
+      "types": [
+        "string"
+      ],
+      "spread": false,
+      "description": "an uppercase string"
+    },
+    "params": []
+  },
+  {
+    "__docId__": 57,
+    "kind": "function",
+    "name": "productById",
+    "memberof": "src/drinkshop.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/drinkshop.js~productById",
+    "access": "public",
+    "export": false,
+    "importPath": "drink-shop/src/drinkshop.js",
+    "importStyle": null,
+    "description": "takes a `productId` and returns the product corresponding to that id.",
+    "lineNumber": 75,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "number"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "productId",
+        "description": "an id for a product"
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "Object"
+      ],
+      "spread": false,
+      "description": "returns a product object"
+    }
+  },
+  {
+    "__docId__": 58,
+    "kind": "function",
+    "name": "productCost",
+    "memberof": "src/drinkshop.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/drinkshop.js~productCost",
+    "access": "public",
+    "export": false,
+    "importPath": "drink-shop/src/drinkshop.js",
+    "importStyle": null,
+    "description": "takes a `productId` and returns the price of the product corresponding to that id.",
+    "lineNumber": 84,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "number"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "productId",
+        "description": "an id for a product"
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "number"
+      ],
+      "spread": false,
+      "description": "returns a cost in AUD to two decimal places"
+    }
+  },
+  {
+    "__docId__": 59,
+    "kind": "function",
+    "name": "formatAddress",
+    "memberof": "src/drinkshop.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/drinkshop.js~formatAddress",
+    "access": "public",
+    "export": false,
+    "importPath": "drink-shop/src/drinkshop.js",
+    "importStyle": null,
+    "description": "returns an customer address in a format appropriate for putting on an envelope",
+    "lineNumber": 94,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "customerEmail",
+        "description": "a customer email which is the key for a customer record"
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "address"
+      ],
+      "spread": false,
+      "description": "returns a {@link address} in a format appropriate for putting on an envelope"
+    }
+  },
+  {
+    "__docId__": 60,
+    "kind": "function",
+    "name": "totalCost",
+    "memberof": "src/drinkshop.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/drinkshop.js~totalCost",
+    "access": "public",
+    "export": false,
+    "importPath": "drink-shop/src/drinkshop.js",
+    "importStyle": null,
+    "description": "returns the total cost of an order which is the sum of all products contained in an order",
+    "lineNumber": 108,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "customerEmail",
+        "description": "a customer email which is the key for a customer record"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "number"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "orderId",
+        "description": "an id number corresponding to an order"
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "number"
+      ],
+      "spread": false,
+      "description": "the total cost of the order in AUD to two decimal places"
+    }
+  },
+  {
+    "__docId__": 61,
+    "kind": "function",
+    "name": "addProduct",
+    "memberof": "src/drinkshop.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/drinkshop.js~addProduct",
+    "access": "public",
+    "export": false,
+    "importPath": "drink-shop/src/drinkshop.js",
+    "importStyle": null,
+    "description": "adds a product to the products object",
+    "lineNumber": 118,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "number"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "id",
+        "description": "a unique numeric id for a product"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "title",
+        "description": "the title of the product"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "number"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "price",
+        "description": "the price of the product in AUD to two decimal places"
+      }
+    ],
+    "return": null
+  },
+  {
+    "__docId__": 62,
+    "kind": "function",
+    "name": "updateProductPrice",
+    "memberof": "src/drinkshop.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/drinkshop.js~updateProductPrice",
+    "access": "public",
+    "export": false,
+    "importPath": "drink-shop/src/drinkshop.js",
+    "importStyle": null,
+    "description": "updates the price of a product in the products object",
+    "lineNumber": 127,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "number"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "id",
+        "description": "the id for a product in the products object"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "number"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "newPrice",
+        "description": "the new price for a product in AUD to two decimal places"
+      }
+    ],
+    "return": null
+  },
+  {
+    "kind": "index",
+    "content": "# The Drink Shop Challenge\n\nImplement all the functions provided according to the type definitions in this documentation.\n\nYou must submit the implementation of your functions via Ed to check whether they are correct.\n\nAs an extension activity for this task you should create this application as an API for managing customers and orders that could be connected to a website or mobile application front-end.\n",
+    "longname": "/Users/nc/workspace/scratch/drink-shop/README.md",
+    "name": "./README.md",
+    "static": true,
+    "access": "public"
+  },
+  {
+    "kind": "packageJSON",
+    "content": "{\n  \"name\": \"drink-shop\",\n  \"version\": \"1.0.0\",\n  \"description\": \"\",\n  \"main\": \"drinkshop.js\",\n  \"scripts\": {\n    \"test\": \"echo \\\"Error: no test specified\\\" && exit 1\"\n  },\n  \"keywords\": [],\n  \"author\": \"\",\n  \"license\": \"ISC\",\n  \"devDependencies\": {\n    \"esdoc\": \"^1.1.0\",\n    \"esdoc-ecmascript-proposal-plugin\": \"^1.0.0\",\n    \"esdoc-standard-plugin\": \"^1.0.0\"\n  }\n}\n",
+    "longname": "/Users/nc/workspace/scratch/drink-shop/package.json",
+    "name": "package.json",
+    "static": true,
+    "access": "public"
+  }
+]

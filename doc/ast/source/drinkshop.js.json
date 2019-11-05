@@ -1,0 +1,6539 @@
+{
+  "type": "File",
+  "start": 0,
+  "end": 4955,
+  "loc": {
+    "start": {
+      "line": 1,
+      "column": 0
+    },
+    "end": {
+      "line": 144,
+      "column": 0
+    }
+  },
+  "program": {
+    "type": "Program",
+    "start": 0,
+    "end": 4955,
+    "loc": {
+      "start": {
+        "line": 1,
+        "column": 0
+      },
+      "end": {
+        "line": 144,
+        "column": 0
+      }
+    },
+    "sourceType": "module",
+    "body": [
+      {
+        "type": "VariableDeclaration",
+        "start": 1724,
+        "end": 1743,
+        "loc": {
+          "start": {
+            "line": 43,
+            "column": 0
+          },
+          "end": {
+            "line": 43,
+            "column": 19
+          }
+        },
+        "declarations": [
+          {
+            "type": "VariableDeclarator",
+            "start": 1730,
+            "end": 1743,
+            "loc": {
+              "start": {
+                "line": 43,
+                "column": 6
+              },
+              "end": {
+                "line": 43,
+                "column": 19
+              }
+            },
+            "id": {
+              "type": "Identifier",
+              "start": 1730,
+              "end": 1738,
+              "loc": {
+                "start": {
+                  "line": 43,
+                  "column": 6
+                },
+                "end": {
+                  "line": 43,
+                  "column": 14
+                },
+                "identifierName": "shopData"
+              },
+              "name": "shopData",
+              "leadingComments": null
+            },
+            "init": {
+              "type": "ObjectExpression",
+              "start": 1741,
+              "end": 1743,
+              "loc": {
+                "start": {
+                  "line": 43,
+                  "column": 17
+                },
+                "end": {
+                  "line": 43,
+                  "column": 19
+                }
+              },
+              "properties": [],
+              "leadingComments": null,
+              "trailingComments": null
+            },
+            "leadingComments": null,
+            "trailingComments": null
+          }
+        ],
+        "kind": "const",
+        "leadingComments": [
+          {
+            "type": "CommentBlock",
+            "value": "*\n * A product\n * @typedef {Object} product\n * @property {number} id - an unique id number for the product\n * @property {string} title - the name of a product\n * @property {number} price - the price of a product in AUD to two decimal places\n ",
+            "start": 0,
+            "end": 246,
+            "loc": {
+              "start": {
+                "line": 1,
+                "column": 0
+              },
+              "end": {
+                "line": 7,
+                "column": 3
+              }
+            }
+          },
+          {
+            "type": "CommentBlock",
+            "value": "*\n * A customer\n * @typedef {Object} customer\n * @property {string} firstName - the first given name of the customer\n * @property {string} lastName - the surname of the customer\n * @property {address} address - the customer's {@link address} for billing and delivery purposes\n * @property {order[]} orders - an array of {@link order}s the customer has made\n * @property {string} customerNotes - a string containing any notes about the customer\n",
+            "start": 248,
+            "end": 696,
+            "loc": {
+              "start": {
+                "line": 9,
+                "column": 0
+              },
+              "end": {
+                "line": 17,
+                "column": 2
+              }
+            }
+          },
+          {
+            "type": "CommentBlock",
+            "value": "*\n * An address\n * @typedef {Object} address\n * @property {number} streetNumber - the alphanumeric indicator for a property\n * @property {string} streetName - the name of the street on which the customer's property is\n * @property {string} city - the city in which the customer's property is\n * @property {number} postcode - the government postal code for the area in which the customer's property resides\n ",
+            "start": 698,
+            "end": 1109,
+            "loc": {
+              "start": {
+                "line": 19,
+                "column": 0
+              },
+              "end": {
+                "line": 26,
+                "column": 3
+              }
+            }
+          },
+          {
+            "type": "CommentBlock",
+            "value": "*\n * An order\n * @typedef {Object} order\n * @property {number} id - a unique id number for the order\n * @property {string} status - an indicator of the status of the delivery such as delivered, processing, cancelled\n * @property {item[]} items - an array of {@link item}s\n * @property {string} notes - an arbitrary note from the customer regarding delivery of the order\n ",
+            "start": 1111,
+            "end": 1486,
+            "loc": {
+              "start": {
+                "line": 28,
+                "column": 0
+              },
+              "end": {
+                "line": 35,
+                "column": 3
+              }
+            }
+          },
+          {
+            "type": "CommentBlock",
+            "value": "*\n * An item which is part of an order\n * @typedef {Object} item\n * @property {number} productId - a unique numeric id for a product\n * @property {number} quantity - a number representing the quantity of the product for the order\n ",
+            "start": 1488,
+            "end": 1723,
+            "loc": {
+              "start": {
+                "line": 37,
+                "column": 0
+              },
+              "end": {
+                "line": 42,
+                "column": 3
+              }
+            }
+          }
+        ],
+        "trailingComments": [
+          {
+            "type": "CommentLine",
+            "value": " Add JSON to this variable",
+            "start": 1744,
+            "end": 1772,
+            "loc": {
+              "start": {
+                "line": 43,
+                "column": 20
+              },
+              "end": {
+                "line": 43,
+                "column": 48
+              }
+            }
+          },
+          {
+            "type": "CommentBlock",
+            "value": "*\n * Returns the title of the shop\n * @return {string} - the title of the shop\n ",
+            "start": 1774,
+            "end": 1858,
+            "loc": {
+              "start": {
+                "line": 45,
+                "column": 0
+              },
+              "end": {
+                "line": 48,
+                "column": 3
+              }
+            }
+          }
+        ]
+      },
+      {
+        "type": "FunctionDeclaration",
+        "start": 1859,
+        "end": 1959,
+        "loc": {
+          "start": {
+            "line": 49,
+            "column": 0
+          },
+          "end": {
+            "line": 51,
+            "column": 1
+          }
+        },
+        "id": {
+          "type": "Identifier",
+          "start": 1868,
+          "end": 1877,
+          "loc": {
+            "start": {
+              "line": 49,
+              "column": 9
+            },
+            "end": {
+              "line": 49,
+              "column": 18
+            },
+            "identifierName": "shopTitle"
+          },
+          "name": "shopTitle",
+          "leadingComments": null
+        },
+        "generator": false,
+        "expression": false,
+        "async": false,
+        "params": [],
+        "body": {
+          "type": "BlockStatement",
+          "start": 1880,
+          "end": 1959,
+          "loc": {
+            "start": {
+              "line": 49,
+              "column": 21
+            },
+            "end": {
+              "line": 51,
+              "column": 1
+            }
+          },
+          "body": [],
+          "directives": [],
+          "leadingComments": null,
+          "trailingComments": [
+            {
+              "type": "CommentLine",
+              "value": " Return the shop title (you have access to the shop object from here)",
+              "start": 1886,
+              "end": 1957,
+              "loc": {
+                "start": {
+                  "line": 50,
+                  "column": 4
+                },
+                "end": {
+                  "line": 50,
+                  "column": 75
+                }
+              }
+            },
+            {
+              "type": "CommentBlock",
+              "value": "*\n * Coverts a string to uppercase\n *  @param {string} inputString - a string to be converted to uppercase\n ",
+              "start": 1961,
+              "end": 2073,
+              "loc": {
+                "start": {
+                  "line": 53,
+                  "column": 0
+                },
+                "end": {
+                  "line": 56,
+                  "column": 3
+                }
+              }
+            }
+          ]
+        },
+        "leadingComments": [
+          {
+            "type": "CommentLine",
+            "value": " Add JSON to this variable",
+            "start": 1744,
+            "end": 1772,
+            "loc": {
+              "start": {
+                "line": 43,
+                "column": 20
+              },
+              "end": {
+                "line": 43,
+                "column": 48
+              }
+            }
+          },
+          {
+            "type": "CommentBlock",
+            "value": "*\n * Returns the title of the shop\n * @return {string} - the title of the shop\n ",
+            "start": 1774,
+            "end": 1858,
+            "loc": {
+              "start": {
+                "line": 45,
+                "column": 0
+              },
+              "end": {
+                "line": 48,
+                "column": 3
+              }
+            }
+          }
+        ]
+      },
+      {
+        "type": "FunctionDeclaration",
+        "start": 2074,
+        "end": 2154,
+        "loc": {
+          "start": {
+            "line": 57,
+            "column": 0
+          },
+          "end": {
+            "line": 59,
+            "column": 1
+          }
+        },
+        "id": {
+          "type": "Identifier",
+          "start": 2083,
+          "end": 2092,
+          "loc": {
+            "start": {
+              "line": 57,
+              "column": 9
+            },
+            "end": {
+              "line": 57,
+              "column": 18
+            },
+            "identifierName": "upperCase"
+          },
+          "name": "upperCase",
+          "leadingComments": null
+        },
+        "generator": false,
+        "expression": false,
+        "async": false,
+        "params": [
+          {
+            "type": "Identifier",
+            "start": 2093,
+            "end": 2104,
+            "loc": {
+              "start": {
+                "line": 57,
+                "column": 19
+              },
+              "end": {
+                "line": 57,
+                "column": 30
+              },
+              "identifierName": "inputString"
+            },
+            "name": "inputString"
+          }
+        ],
+        "body": {
+          "type": "BlockStatement",
+          "start": 2106,
+          "end": 2154,
+          "loc": {
+            "start": {
+              "line": 57,
+              "column": 32
+            },
+            "end": {
+              "line": 59,
+              "column": 1
+            }
+          },
+          "body": [],
+          "directives": [],
+          "leadingComments": null,
+          "trailingComments": [
+            {
+              "type": "CommentLine",
+              "value": " Return an uppercase version of string",
+              "start": 2112,
+              "end": 2152,
+              "loc": {
+                "start": {
+                  "line": 58,
+                  "column": 4
+                },
+                "end": {
+                  "line": 58,
+                  "column": 44
+                }
+              }
+            },
+            {
+              "type": "CommentBlock",
+              "value": "*\n * Returns the shop title in uppercase.\n * @return {string} an uppercase string\n ",
+              "start": 2156,
+              "end": 2243,
+              "loc": {
+                "start": {
+                  "line": 61,
+                  "column": 0
+                },
+                "end": {
+                  "line": 64,
+                  "column": 3
+                }
+              }
+            }
+          ]
+        },
+        "leadingComments": [
+          {
+            "type": "CommentBlock",
+            "value": "*\n * Coverts a string to uppercase\n *  @param {string} inputString - a string to be converted to uppercase\n ",
+            "start": 1961,
+            "end": 2073,
+            "loc": {
+              "start": {
+                "line": 53,
+                "column": 0
+              },
+              "end": {
+                "line": 56,
+                "column": 3
+              }
+            }
+          }
+        ]
+      },
+      {
+        "type": "FunctionDeclaration",
+        "start": 2244,
+        "end": 2384,
+        "loc": {
+          "start": {
+            "line": 65,
+            "column": 0
+          },
+          "end": {
+            "line": 68,
+            "column": 1
+          }
+        },
+        "id": {
+          "type": "Identifier",
+          "start": 2253,
+          "end": 2271,
+          "loc": {
+            "start": {
+              "line": 65,
+              "column": 9
+            },
+            "end": {
+              "line": 65,
+              "column": 27
+            },
+            "identifierName": "upperCaseShopTitle"
+          },
+          "name": "upperCaseShopTitle",
+          "leadingComments": null
+        },
+        "generator": false,
+        "expression": false,
+        "async": false,
+        "params": [],
+        "body": {
+          "type": "BlockStatement",
+          "start": 2274,
+          "end": 2384,
+          "loc": {
+            "start": {
+              "line": 65,
+              "column": 30
+            },
+            "end": {
+              "line": 68,
+              "column": 1
+            }
+          },
+          "body": [],
+          "directives": [],
+          "leadingComments": null,
+          "trailingComments": [
+            {
+              "type": "CommentLine",
+              "value": " Return an uppercase shop title.",
+              "start": 2280,
+              "end": 2314,
+              "loc": {
+                "start": {
+                  "line": 66,
+                  "column": 4
+                },
+                "end": {
+                  "line": 66,
+                  "column": 38
+                }
+              }
+            },
+            {
+              "type": "CommentLine",
+              "value": " Don't repeat yourself. Use the two functions you just built!",
+              "start": 2319,
+              "end": 2382,
+              "loc": {
+                "start": {
+                  "line": 67,
+                  "column": 4
+                },
+                "end": {
+                  "line": 67,
+                  "column": 67
+                }
+              }
+            },
+            {
+              "type": "CommentBlock",
+              "value": "*\n * takes a `productId` and returns the product corresponding to that id.\n * @param {number} productId - an id for a product\n * @return {Object} - returns a product object\n ",
+              "start": 2386,
+              "end": 2564,
+              "loc": {
+                "start": {
+                  "line": 70,
+                  "column": 0
+                },
+                "end": {
+                  "line": 74,
+                  "column": 3
+                }
+              }
+            }
+          ]
+        },
+        "leadingComments": [
+          {
+            "type": "CommentBlock",
+            "value": "*\n * Returns the shop title in uppercase.\n * @return {string} an uppercase string\n ",
+            "start": 2156,
+            "end": 2243,
+            "loc": {
+              "start": {
+                "line": 61,
+                "column": 0
+              },
+              "end": {
+                "line": 64,
+                "column": 3
+              }
+            }
+          }
+        ]
+      },
+      {
+        "type": "FunctionDeclaration",
+        "start": 2565,
+        "end": 2640,
+        "loc": {
+          "start": {
+            "line": 75,
+            "column": 0
+          },
+          "end": {
+            "line": 77,
+            "column": 1
+          }
+        },
+        "id": {
+          "type": "Identifier",
+          "start": 2574,
+          "end": 2585,
+          "loc": {
+            "start": {
+              "line": 75,
+              "column": 9
+            },
+            "end": {
+              "line": 75,
+              "column": 20
+            },
+            "identifierName": "productById"
+          },
+          "name": "productById",
+          "leadingComments": null
+        },
+        "generator": false,
+        "expression": false,
+        "async": false,
+        "params": [
+          {
+            "type": "Identifier",
+            "start": 2586,
+            "end": 2595,
+            "loc": {
+              "start": {
+                "line": 75,
+                "column": 21
+              },
+              "end": {
+                "line": 75,
+                "column": 30
+              },
+              "identifierName": "productId"
+            },
+            "name": "productId"
+          }
+        ],
+        "body": {
+          "type": "BlockStatement",
+          "start": 2597,
+          "end": 2640,
+          "loc": {
+            "start": {
+              "line": 75,
+              "column": 32
+            },
+            "end": {
+              "line": 77,
+              "column": 1
+            }
+          },
+          "body": [],
+          "directives": [],
+          "leadingComments": null,
+          "trailingComments": [
+            {
+              "type": "CommentLine",
+              "value": " Return a specific product object",
+              "start": 2603,
+              "end": 2638,
+              "loc": {
+                "start": {
+                  "line": 76,
+                  "column": 4
+                },
+                "end": {
+                  "line": 76,
+                  "column": 39
+                }
+              }
+            },
+            {
+              "type": "CommentBlock",
+              "value": "*\n * takes a `productId` and returns the price of the product corresponding to that id.\n * @param {number} productId - an id for a product\n * @return {number} - returns a cost in AUD to two decimal places\n ",
+              "start": 2642,
+              "end": 2852,
+              "loc": {
+                "start": {
+                  "line": 79,
+                  "column": 0
+                },
+                "end": {
+                  "line": 83,
+                  "column": 3
+                }
+              }
+            }
+          ]
+        },
+        "leadingComments": [
+          {
+            "type": "CommentBlock",
+            "value": "*\n * takes a `productId` and returns the product corresponding to that id.\n * @param {number} productId - an id for a product\n * @return {Object} - returns a product object\n ",
+            "start": 2386,
+            "end": 2564,
+            "loc": {
+              "start": {
+                "line": 70,
+                "column": 0
+              },
+              "end": {
+                "line": 74,
+                "column": 3
+              }
+            }
+          }
+        ]
+      },
+      {
+        "type": "FunctionDeclaration",
+        "start": 2853,
+        "end": 2939,
+        "loc": {
+          "start": {
+            "line": 84,
+            "column": 0
+          },
+          "end": {
+            "line": 86,
+            "column": 1
+          }
+        },
+        "id": {
+          "type": "Identifier",
+          "start": 2862,
+          "end": 2873,
+          "loc": {
+            "start": {
+              "line": 84,
+              "column": 9
+            },
+            "end": {
+              "line": 84,
+              "column": 20
+            },
+            "identifierName": "productCost"
+          },
+          "name": "productCost",
+          "leadingComments": null
+        },
+        "generator": false,
+        "expression": false,
+        "async": false,
+        "params": [
+          {
+            "type": "Identifier",
+            "start": 2874,
+            "end": 2883,
+            "loc": {
+              "start": {
+                "line": 84,
+                "column": 21
+              },
+              "end": {
+                "line": 84,
+                "column": 30
+              },
+              "identifierName": "productId"
+            },
+            "name": "productId"
+          }
+        ],
+        "body": {
+          "type": "BlockStatement",
+          "start": 2885,
+          "end": 2939,
+          "loc": {
+            "start": {
+              "line": 84,
+              "column": 32
+            },
+            "end": {
+              "line": 86,
+              "column": 1
+            }
+          },
+          "body": [],
+          "directives": [],
+          "leadingComments": null,
+          "trailingComments": [
+            {
+              "type": "CommentLine",
+              "value": " given a product id, return its cost. DRY ;)",
+              "start": 2891,
+              "end": 2937,
+              "loc": {
+                "start": {
+                  "line": 85,
+                  "column": 4
+                },
+                "end": {
+                  "line": 85,
+                  "column": 50
+                }
+              }
+            },
+            {
+              "type": "CommentBlock",
+              "value": "*\n * returns an customer address in a format appropriate for putting on an envelope\n * @param {string} customerEmail - a customer email which is the key for a customer record\n * @return {address} returns a {@link address} in a format appropriate for putting on an envelope\n *\n ",
+              "start": 2941,
+              "end": 3222,
+              "loc": {
+                "start": {
+                  "line": 88,
+                  "column": 0
+                },
+                "end": {
+                  "line": 93,
+                  "column": 3
+                }
+              }
+            }
+          ]
+        },
+        "leadingComments": [
+          {
+            "type": "CommentBlock",
+            "value": "*\n * takes a `productId` and returns the price of the product corresponding to that id.\n * @param {number} productId - an id for a product\n * @return {number} - returns a cost in AUD to two decimal places\n ",
+            "start": 2642,
+            "end": 2852,
+            "loc": {
+              "start": {
+                "line": 79,
+                "column": 0
+              },
+              "end": {
+                "line": 83,
+                "column": 3
+              }
+            }
+          }
+        ]
+      },
+      {
+        "type": "FunctionDeclaration",
+        "start": 3223,
+        "end": 3568,
+        "loc": {
+          "start": {
+            "line": 94,
+            "column": 0
+          },
+          "end": {
+            "line": 100,
+            "column": 1
+          }
+        },
+        "id": {
+          "type": "Identifier",
+          "start": 3232,
+          "end": 3245,
+          "loc": {
+            "start": {
+              "line": 94,
+              "column": 9
+            },
+            "end": {
+              "line": 94,
+              "column": 22
+            },
+            "identifierName": "formatAddress"
+          },
+          "name": "formatAddress",
+          "leadingComments": null
+        },
+        "generator": false,
+        "expression": false,
+        "async": false,
+        "params": [
+          {
+            "type": "Identifier",
+            "start": 3246,
+            "end": 3259,
+            "loc": {
+              "start": {
+                "line": 94,
+                "column": 23
+              },
+              "end": {
+                "line": 94,
+                "column": 36
+              },
+              "identifierName": "customerEmail"
+            },
+            "name": "customerEmail"
+          }
+        ],
+        "body": {
+          "type": "BlockStatement",
+          "start": 3261,
+          "end": 3568,
+          "loc": {
+            "start": {
+              "line": 94,
+              "column": 38
+            },
+            "end": {
+              "line": 100,
+              "column": 1
+            }
+          },
+          "body": [],
+          "directives": [],
+          "leadingComments": null,
+          "trailingComments": [
+            {
+              "type": "CommentLine",
+              "value": " return(drinkShop.customers.'jane@doe.com'.address.(streetNumber, street, city, postcode))",
+              "start": 3267,
+              "end": 3359,
+              "loc": {
+                "start": {
+                  "line": 95,
+                  "column": 4
+                },
+                "end": {
+                  "line": 95,
+                  "column": 96
+                }
+              }
+            },
+            {
+              "type": "CommentLine",
+              "value": " Given a user's email, return their address in the format:",
+              "start": 3364,
+              "end": 3424,
+              "loc": {
+                "start": {
+                  "line": 96,
+                  "column": 4
+                },
+                "end": {
+                  "line": 96,
+                  "column": 64
+                }
+              }
+            },
+            {
+              "type": "CommentLine",
+              "value": " streetNumber street, city, postcode",
+              "start": 3429,
+              "end": 3467,
+              "loc": {
+                "start": {
+                  "line": 97,
+                  "column": 4
+                },
+                "end": {
+                  "line": 97,
+                  "column": 42
+                }
+              }
+            },
+            {
+              "type": "CommentLine",
+              "value": " E.g. 10 Amelia St, Sydney, 2000",
+              "start": 3472,
+              "end": 3506,
+              "loc": {
+                "start": {
+                  "line": 98,
+                  "column": 4
+                },
+                "end": {
+                  "line": 98,
+                  "column": 38
+                }
+              }
+            },
+            {
+              "type": "CommentLine",
+              "value": " Hint: some destructuring might save you a few lines.",
+              "start": 3511,
+              "end": 3566,
+              "loc": {
+                "start": {
+                  "line": 99,
+                  "column": 4
+                },
+                "end": {
+                  "line": 99,
+                  "column": 59
+                }
+              }
+            },
+            {
+              "type": "CommentBlock",
+              "value": "*\n * returns the total cost of an order which is the sum of all products contained in an order\n * @param {string} customerEmail - a customer email which is the key for a customer record\n * @param {number} orderId - an id number corresponding to an order\n * @return {number} the total cost of the order in AUD to two decimal places\n ",
+              "start": 3570,
+              "end": 3906,
+              "loc": {
+                "start": {
+                  "line": 102,
+                  "column": 0
+                },
+                "end": {
+                  "line": 107,
+                  "column": 3
+                }
+              }
+            }
+          ]
+        },
+        "leadingComments": [
+          {
+            "type": "CommentBlock",
+            "value": "*\n * returns an customer address in a format appropriate for putting on an envelope\n * @param {string} customerEmail - a customer email which is the key for a customer record\n * @return {address} returns a {@link address} in a format appropriate for putting on an envelope\n *\n ",
+            "start": 2941,
+            "end": 3222,
+            "loc": {
+              "start": {
+                "line": 88,
+                "column": 0
+              },
+              "end": {
+                "line": 93,
+                "column": 3
+              }
+            }
+          }
+        ]
+      },
+      {
+        "type": "FunctionDeclaration",
+        "start": 3907,
+        "end": 3995,
+        "loc": {
+          "start": {
+            "line": 108,
+            "column": 0
+          },
+          "end": {
+            "line": 110,
+            "column": 1
+          }
+        },
+        "id": {
+          "type": "Identifier",
+          "start": 3916,
+          "end": 3925,
+          "loc": {
+            "start": {
+              "line": 108,
+              "column": 9
+            },
+            "end": {
+              "line": 108,
+              "column": 18
+            },
+            "identifierName": "totalCost"
+          },
+          "name": "totalCost",
+          "leadingComments": null
+        },
+        "generator": false,
+        "expression": false,
+        "async": false,
+        "params": [
+          {
+            "type": "Identifier",
+            "start": 3926,
+            "end": 3939,
+            "loc": {
+              "start": {
+                "line": 108,
+                "column": 19
+              },
+              "end": {
+                "line": 108,
+                "column": 32
+              },
+              "identifierName": "customerEmail"
+            },
+            "name": "customerEmail"
+          },
+          {
+            "type": "Identifier",
+            "start": 3941,
+            "end": 3948,
+            "loc": {
+              "start": {
+                "line": 108,
+                "column": 34
+              },
+              "end": {
+                "line": 108,
+                "column": 41
+              },
+              "identifierName": "orderId"
+            },
+            "name": "orderId"
+          }
+        ],
+        "body": {
+          "type": "BlockStatement",
+          "start": 3950,
+          "end": 3995,
+          "loc": {
+            "start": {
+              "line": 108,
+              "column": 43
+            },
+            "end": {
+              "line": 110,
+              "column": 1
+            }
+          },
+          "body": [],
+          "directives": [],
+          "leadingComments": null,
+          "trailingComments": [
+            {
+              "type": "CommentLine",
+              "value": " Return the total cost of an order.",
+              "start": 3956,
+              "end": 3993,
+              "loc": {
+                "start": {
+                  "line": 109,
+                  "column": 4
+                },
+                "end": {
+                  "line": 109,
+                  "column": 41
+                }
+              }
+            },
+            {
+              "type": "CommentBlock",
+              "value": "*\n * adds a product to the products object\n * @param {number} id - a unique numeric id for a product\n * @param {string} title - the title of the product\n * @param {number} price - the price of the product in AUD to two decimal places\n ",
+              "start": 3997,
+              "end": 4236,
+              "loc": {
+                "start": {
+                  "line": 112,
+                  "column": 0
+                },
+                "end": {
+                  "line": 117,
+                  "column": 3
+                }
+              }
+            }
+          ]
+        },
+        "leadingComments": [
+          {
+            "type": "CommentBlock",
+            "value": "*\n * returns the total cost of an order which is the sum of all products contained in an order\n * @param {string} customerEmail - a customer email which is the key for a customer record\n * @param {number} orderId - an id number corresponding to an order\n * @return {number} the total cost of the order in AUD to two decimal places\n ",
+            "start": 3570,
+            "end": 3906,
+            "loc": {
+              "start": {
+                "line": 102,
+                "column": 0
+              },
+              "end": {
+                "line": 107,
+                "column": 3
+              }
+            }
+          }
+        ]
+      },
+      {
+        "type": "FunctionDeclaration",
+        "start": 4237,
+        "end": 4312,
+        "loc": {
+          "start": {
+            "line": 118,
+            "column": 0
+          },
+          "end": {
+            "line": 120,
+            "column": 1
+          }
+        },
+        "id": {
+          "type": "Identifier",
+          "start": 4246,
+          "end": 4256,
+          "loc": {
+            "start": {
+              "line": 118,
+              "column": 9
+            },
+            "end": {
+              "line": 118,
+              "column": 19
+            },
+            "identifierName": "addProduct"
+          },
+          "name": "addProduct",
+          "leadingComments": null
+        },
+        "generator": false,
+        "expression": false,
+        "async": false,
+        "params": [
+          {
+            "type": "Identifier",
+            "start": 4257,
+            "end": 4259,
+            "loc": {
+              "start": {
+                "line": 118,
+                "column": 20
+              },
+              "end": {
+                "line": 118,
+                "column": 22
+              },
+              "identifierName": "id"
+            },
+            "name": "id"
+          },
+          {
+            "type": "Identifier",
+            "start": 4261,
+            "end": 4266,
+            "loc": {
+              "start": {
+                "line": 118,
+                "column": 24
+              },
+              "end": {
+                "line": 118,
+                "column": 29
+              },
+              "identifierName": "title"
+            },
+            "name": "title"
+          },
+          {
+            "type": "Identifier",
+            "start": 4268,
+            "end": 4273,
+            "loc": {
+              "start": {
+                "line": 118,
+                "column": 31
+              },
+              "end": {
+                "line": 118,
+                "column": 36
+              },
+              "identifierName": "price"
+            },
+            "name": "price"
+          }
+        ],
+        "body": {
+          "type": "BlockStatement",
+          "start": 4275,
+          "end": 4312,
+          "loc": {
+            "start": {
+              "line": 118,
+              "column": 38
+            },
+            "end": {
+              "line": 120,
+              "column": 1
+            }
+          },
+          "body": [],
+          "directives": [],
+          "leadingComments": null,
+          "trailingComments": [
+            {
+              "type": "CommentLine",
+              "value": " Add a product to the shop.",
+              "start": 4281,
+              "end": 4310,
+              "loc": {
+                "start": {
+                  "line": 119,
+                  "column": 4
+                },
+                "end": {
+                  "line": 119,
+                  "column": 33
+                }
+              }
+            },
+            {
+              "type": "CommentBlock",
+              "value": "*\n * updates the price of a product in the products object\n * @param {number} id - the id for a product in the products object\n * @param {number} newPrice - the new price for a product in AUD to two decimal places\n ",
+              "start": 4314,
+              "end": 4533,
+              "loc": {
+                "start": {
+                  "line": 122,
+                  "column": 0
+                },
+                "end": {
+                  "line": 126,
+                  "column": 3
+                }
+              }
+            }
+          ]
+        },
+        "leadingComments": [
+          {
+            "type": "CommentBlock",
+            "value": "*\n * adds a product to the products object\n * @param {number} id - a unique numeric id for a product\n * @param {string} title - the title of the product\n * @param {number} price - the price of the product in AUD to two decimal places\n ",
+            "start": 3997,
+            "end": 4236,
+            "loc": {
+              "start": {
+                "line": 112,
+                "column": 0
+              },
+              "end": {
+                "line": 117,
+                "column": 3
+              }
+            }
+          }
+        ]
+      },
+      {
+        "type": "FunctionDeclaration",
+        "start": 4534,
+        "end": 4625,
+        "loc": {
+          "start": {
+            "line": 127,
+            "column": 0
+          },
+          "end": {
+            "line": 129,
+            "column": 1
+          }
+        },
+        "id": {
+          "type": "Identifier",
+          "start": 4543,
+          "end": 4561,
+          "loc": {
+            "start": {
+              "line": 127,
+              "column": 9
+            },
+            "end": {
+              "line": 127,
+              "column": 27
+            },
+            "identifierName": "updateProductPrice"
+          },
+          "name": "updateProductPrice",
+          "leadingComments": null
+        },
+        "generator": false,
+        "expression": false,
+        "async": false,
+        "params": [
+          {
+            "type": "Identifier",
+            "start": 4562,
+            "end": 4564,
+            "loc": {
+              "start": {
+                "line": 127,
+                "column": 28
+              },
+              "end": {
+                "line": 127,
+                "column": 30
+              },
+              "identifierName": "id"
+            },
+            "name": "id"
+          },
+          {
+            "type": "Identifier",
+            "start": 4566,
+            "end": 4574,
+            "loc": {
+              "start": {
+                "line": 127,
+                "column": 32
+              },
+              "end": {
+                "line": 127,
+                "column": 40
+              },
+              "identifierName": "newPrice"
+            },
+            "name": "newPrice"
+          }
+        ],
+        "body": {
+          "type": "BlockStatement",
+          "start": 4576,
+          "end": 4625,
+          "loc": {
+            "start": {
+              "line": 127,
+              "column": 42
+            },
+            "end": {
+              "line": 129,
+              "column": 1
+            }
+          },
+          "body": [],
+          "directives": [],
+          "leadingComments": null,
+          "innerComments": [
+            {
+              "type": "CommentLine",
+              "value": " Update the price of a specific product",
+              "start": 4582,
+              "end": 4623,
+              "loc": {
+                "start": {
+                  "line": 128,
+                  "column": 4
+                },
+                "end": {
+                  "line": 128,
+                  "column": 45
+                }
+              }
+            }
+          ]
+        },
+        "leadingComments": [
+          {
+            "type": "CommentBlock",
+            "value": "*\n * updates the price of a product in the products object\n * @param {number} id - the id for a product in the products object\n * @param {number} newPrice - the new price for a product in AUD to two decimal places\n ",
+            "start": 4314,
+            "end": 4533,
+            "loc": {
+              "start": {
+                "line": 122,
+                "column": 0
+              },
+              "end": {
+                "line": 126,
+                "column": 3
+              }
+            }
+          }
+        ]
+      },
+      {
+        "type": "ExpressionStatement",
+        "start": 4628,
+        "end": 4953,
+        "loc": {
+          "start": {
+            "line": 132,
+            "column": 0
+          },
+          "end": {
+            "line": 142,
+            "column": 1
+          }
+        },
+        "expression": {
+          "type": "AssignmentExpression",
+          "start": 4628,
+          "end": 4953,
+          "loc": {
+            "start": {
+              "line": 132,
+              "column": 0
+            },
+            "end": {
+              "line": 142,
+              "column": 1
+            }
+          },
+          "operator": "=",
+          "left": {
+            "type": "MemberExpression",
+            "start": 4628,
+            "end": 4642,
+            "loc": {
+              "start": {
+                "line": 132,
+                "column": 0
+              },
+              "end": {
+                "line": 132,
+                "column": 14
+              }
+            },
+            "object": {
+              "type": "Identifier",
+              "start": 4628,
+              "end": 4634,
+              "loc": {
+                "start": {
+                  "line": 132,
+                  "column": 0
+                },
+                "end": {
+                  "line": 132,
+                  "column": 6
+                },
+                "identifierName": "module"
+              },
+              "name": "module"
+            },
+            "property": {
+              "type": "Identifier",
+              "start": 4635,
+              "end": 4642,
+              "loc": {
+                "start": {
+                  "line": 132,
+                  "column": 7
+                },
+                "end": {
+                  "line": 132,
+                  "column": 14
+                },
+                "identifierName": "exports"
+              },
+              "name": "exports"
+            },
+            "computed": false
+          },
+          "right": {
+            "type": "ObjectExpression",
+            "start": 4645,
+            "end": 4953,
+            "loc": {
+              "start": {
+                "line": 132,
+                "column": 17
+              },
+              "end": {
+                "line": 142,
+                "column": 1
+              }
+            },
+            "properties": [
+              {
+                "type": "ObjectProperty",
+                "start": 4651,
+                "end": 4673,
+                "loc": {
+                  "start": {
+                    "line": 133,
+                    "column": 4
+                  },
+                  "end": {
+                    "line": 133,
+                    "column": 26
+                  }
+                },
+                "method": false,
+                "shorthand": false,
+                "computed": false,
+                "key": {
+                  "type": "Identifier",
+                  "start": 4651,
+                  "end": 4660,
+                  "loc": {
+                    "start": {
+                      "line": 133,
+                      "column": 4
+                    },
+                    "end": {
+                      "line": 133,
+                      "column": 13
+                    },
+                    "identifierName": "shopTitle"
+                  },
+                  "name": "shopTitle"
+                },
+                "value": {
+                  "type": "CallExpression",
+                  "start": 4662,
+                  "end": 4673,
+                  "loc": {
+                    "start": {
+                      "line": 133,
+                      "column": 15
+                    },
+                    "end": {
+                      "line": 133,
+                      "column": 26
+                    }
+                  },
+                  "callee": {
+                    "type": "Identifier",
+                    "start": 4662,
+                    "end": 4671,
+                    "loc": {
+                      "start": {
+                        "line": 133,
+                        "column": 15
+                      },
+                      "end": {
+                        "line": 133,
+                        "column": 24
+                      },
+                      "identifierName": "shopTitle"
+                    },
+                    "name": "shopTitle"
+                  },
+                  "arguments": []
+                }
+              },
+              {
+                "type": "ObjectProperty",
+                "start": 4679,
+                "end": 4701,
+                "loc": {
+                  "start": {
+                    "line": 134,
+                    "column": 4
+                  },
+                  "end": {
+                    "line": 134,
+                    "column": 26
+                  }
+                },
+                "method": false,
+                "shorthand": false,
+                "computed": false,
+                "key": {
+                  "type": "Identifier",
+                  "start": 4679,
+                  "end": 4688,
+                  "loc": {
+                    "start": {
+                      "line": 134,
+                      "column": 4
+                    },
+                    "end": {
+                      "line": 134,
+                      "column": 13
+                    },
+                    "identifierName": "upperCase"
+                  },
+                  "name": "upperCase"
+                },
+                "value": {
+                  "type": "CallExpression",
+                  "start": 4690,
+                  "end": 4701,
+                  "loc": {
+                    "start": {
+                      "line": 134,
+                      "column": 15
+                    },
+                    "end": {
+                      "line": 134,
+                      "column": 26
+                    }
+                  },
+                  "callee": {
+                    "type": "Identifier",
+                    "start": 4690,
+                    "end": 4699,
+                    "loc": {
+                      "start": {
+                        "line": 134,
+                        "column": 15
+                      },
+                      "end": {
+                        "line": 134,
+                        "column": 24
+                      },
+                      "identifierName": "upperCase"
+                    },
+                    "name": "upperCase"
+                  },
+                  "arguments": []
+                }
+              },
+              {
+                "type": "ObjectProperty",
+                "start": 4707,
+                "end": 4747,
+                "loc": {
+                  "start": {
+                    "line": 135,
+                    "column": 4
+                  },
+                  "end": {
+                    "line": 135,
+                    "column": 44
+                  }
+                },
+                "method": false,
+                "shorthand": false,
+                "computed": false,
+                "key": {
+                  "type": "Identifier",
+                  "start": 4707,
+                  "end": 4725,
+                  "loc": {
+                    "start": {
+                      "line": 135,
+                      "column": 4
+                    },
+                    "end": {
+                      "line": 135,
+                      "column": 22
+                    },
+                    "identifierName": "upperCaseShopTitle"
+                  },
+                  "name": "upperCaseShopTitle"
+                },
+                "value": {
+                  "type": "CallExpression",
+                  "start": 4727,
+                  "end": 4747,
+                  "loc": {
+                    "start": {
+                      "line": 135,
+                      "column": 24
+                    },
+                    "end": {
+                      "line": 135,
+                      "column": 44
+                    }
+                  },
+                  "callee": {
+                    "type": "Identifier",
+                    "start": 4727,
+                    "end": 4745,
+                    "loc": {
+                      "start": {
+                        "line": 135,
+                        "column": 24
+                      },
+                      "end": {
+                        "line": 135,
+                        "column": 42
+                      },
+                      "identifierName": "upperCaseShopTitle"
+                    },
+                    "name": "upperCaseShopTitle"
+                  },
+                  "arguments": []
+                }
+              },
+              {
+                "type": "ObjectProperty",
+                "start": 4753,
+                "end": 4779,
+                "loc": {
+                  "start": {
+                    "line": 136,
+                    "column": 4
+                  },
+                  "end": {
+                    "line": 136,
+                    "column": 30
+                  }
+                },
+                "method": false,
+                "shorthand": false,
+                "computed": false,
+                "key": {
+                  "type": "Identifier",
+                  "start": 4753,
+                  "end": 4764,
+                  "loc": {
+                    "start": {
+                      "line": 136,
+                      "column": 4
+                    },
+                    "end": {
+                      "line": 136,
+                      "column": 15
+                    },
+                    "identifierName": "productById"
+                  },
+                  "name": "productById"
+                },
+                "value": {
+                  "type": "CallExpression",
+                  "start": 4766,
+                  "end": 4779,
+                  "loc": {
+                    "start": {
+                      "line": 136,
+                      "column": 17
+                    },
+                    "end": {
+                      "line": 136,
+                      "column": 30
+                    }
+                  },
+                  "callee": {
+                    "type": "Identifier",
+                    "start": 4766,
+                    "end": 4777,
+                    "loc": {
+                      "start": {
+                        "line": 136,
+                        "column": 17
+                      },
+                      "end": {
+                        "line": 136,
+                        "column": 28
+                      },
+                      "identifierName": "productById"
+                    },
+                    "name": "productById"
+                  },
+                  "arguments": []
+                }
+              },
+              {
+                "type": "ObjectProperty",
+                "start": 4785,
+                "end": 4811,
+                "loc": {
+                  "start": {
+                    "line": 137,
+                    "column": 4
+                  },
+                  "end": {
+                    "line": 137,
+                    "column": 30
+                  }
+                },
+                "method": false,
+                "shorthand": false,
+                "computed": false,
+                "key": {
+                  "type": "Identifier",
+                  "start": 4785,
+                  "end": 4796,
+                  "loc": {
+                    "start": {
+                      "line": 137,
+                      "column": 4
+                    },
+                    "end": {
+                      "line": 137,
+                      "column": 15
+                    },
+                    "identifierName": "productCost"
+                  },
+                  "name": "productCost"
+                },
+                "value": {
+                  "type": "CallExpression",
+                  "start": 4798,
+                  "end": 4811,
+                  "loc": {
+                    "start": {
+                      "line": 137,
+                      "column": 17
+                    },
+                    "end": {
+                      "line": 137,
+                      "column": 30
+                    }
+                  },
+                  "callee": {
+                    "type": "Identifier",
+                    "start": 4798,
+                    "end": 4809,
+                    "loc": {
+                      "start": {
+                        "line": 137,
+                        "column": 17
+                      },
+                      "end": {
+                        "line": 137,
+                        "column": 28
+                      },
+                      "identifierName": "productCost"
+                    },
+                    "name": "productCost"
+                  },
+                  "arguments": []
+                }
+              },
+              {
+                "type": "ObjectProperty",
+                "start": 4817,
+                "end": 4847,
+                "loc": {
+                  "start": {
+                    "line": 138,
+                    "column": 4
+                  },
+                  "end": {
+                    "line": 138,
+                    "column": 34
+                  }
+                },
+                "method": false,
+                "shorthand": false,
+                "computed": false,
+                "key": {
+                  "type": "Identifier",
+                  "start": 4817,
+                  "end": 4830,
+                  "loc": {
+                    "start": {
+                      "line": 138,
+                      "column": 4
+                    },
+                    "end": {
+                      "line": 138,
+                      "column": 17
+                    },
+                    "identifierName": "formatAddress"
+                  },
+                  "name": "formatAddress"
+                },
+                "value": {
+                  "type": "CallExpression",
+                  "start": 4832,
+                  "end": 4847,
+                  "loc": {
+                    "start": {
+                      "line": 138,
+                      "column": 19
+                    },
+                    "end": {
+                      "line": 138,
+                      "column": 34
+                    }
+                  },
+                  "callee": {
+                    "type": "Identifier",
+                    "start": 4832,
+                    "end": 4845,
+                    "loc": {
+                      "start": {
+                        "line": 138,
+                        "column": 19
+                      },
+                      "end": {
+                        "line": 138,
+                        "column": 32
+                      },
+                      "identifierName": "formatAddress"
+                    },
+                    "name": "formatAddress"
+                  },
+                  "arguments": []
+                }
+              },
+              {
+                "type": "ObjectProperty",
+                "start": 4853,
+                "end": 4875,
+                "loc": {
+                  "start": {
+                    "line": 139,
+                    "column": 4
+                  },
+                  "end": {
+                    "line": 139,
+                    "column": 26
+                  }
+                },
+                "method": false,
+                "shorthand": false,
+                "computed": false,
+                "key": {
+                  "type": "Identifier",
+                  "start": 4853,
+                  "end": 4862,
+                  "loc": {
+                    "start": {
+                      "line": 139,
+                      "column": 4
+                    },
+                    "end": {
+                      "line": 139,
+                      "column": 13
+                    },
+                    "identifierName": "totalCost"
+                  },
+                  "name": "totalCost"
+                },
+                "value": {
+                  "type": "CallExpression",
+                  "start": 4864,
+                  "end": 4875,
+                  "loc": {
+                    "start": {
+                      "line": 139,
+                      "column": 15
+                    },
+                    "end": {
+                      "line": 139,
+                      "column": 26
+                    }
+                  },
+                  "callee": {
+                    "type": "Identifier",
+                    "start": 4864,
+                    "end": 4873,
+                    "loc": {
+                      "start": {
+                        "line": 139,
+                        "column": 15
+                      },
+                      "end": {
+                        "line": 139,
+                        "column": 24
+                      },
+                      "identifierName": "totalCost"
+                    },
+                    "name": "totalCost"
+                  },
+                  "arguments": []
+                }
+              },
+              {
+                "type": "ObjectProperty",
+                "start": 4881,
+                "end": 4905,
+                "loc": {
+                  "start": {
+                    "line": 140,
+                    "column": 4
+                  },
+                  "end": {
+                    "line": 140,
+                    "column": 28
+                  }
+                },
+                "method": false,
+                "shorthand": false,
+                "computed": false,
+                "key": {
+                  "type": "Identifier",
+                  "start": 4881,
+                  "end": 4891,
+                  "loc": {
+                    "start": {
+                      "line": 140,
+                      "column": 4
+                    },
+                    "end": {
+                      "line": 140,
+                      "column": 14
+                    },
+                    "identifierName": "addProduct"
+                  },
+                  "name": "addProduct"
+                },
+                "value": {
+                  "type": "CallExpression",
+                  "start": 4893,
+                  "end": 4905,
+                  "loc": {
+                    "start": {
+                      "line": 140,
+                      "column": 16
+                    },
+                    "end": {
+                      "line": 140,
+                      "column": 28
+                    }
+                  },
+                  "callee": {
+                    "type": "Identifier",
+                    "start": 4893,
+                    "end": 4903,
+                    "loc": {
+                      "start": {
+                        "line": 140,
+                        "column": 16
+                      },
+                      "end": {
+                        "line": 140,
+                        "column": 26
+                      },
+                      "identifierName": "addProduct"
+                    },
+                    "name": "addProduct"
+                  },
+                  "arguments": []
+                }
+              },
+              {
+                "type": "ObjectProperty",
+                "start": 4911,
+                "end": 4951,
+                "loc": {
+                  "start": {
+                    "line": 141,
+                    "column": 4
+                  },
+                  "end": {
+                    "line": 141,
+                    "column": 44
+                  }
+                },
+                "method": false,
+                "shorthand": false,
+                "computed": false,
+                "key": {
+                  "type": "Identifier",
+                  "start": 4911,
+                  "end": 4929,
+                  "loc": {
+                    "start": {
+                      "line": 141,
+                      "column": 4
+                    },
+                    "end": {
+                      "line": 141,
+                      "column": 22
+                    },
+                    "identifierName": "updateProductPrice"
+                  },
+                  "name": "updateProductPrice"
+                },
+                "value": {
+                  "type": "CallExpression",
+                  "start": 4931,
+                  "end": 4951,
+                  "loc": {
+                    "start": {
+                      "line": 141,
+                      "column": 24
+                    },
+                    "end": {
+                      "line": 141,
+                      "column": 44
+                    }
+                  },
+                  "callee": {
+                    "type": "Identifier",
+                    "start": 4931,
+                    "end": 4949,
+                    "loc": {
+                      "start": {
+                        "line": 141,
+                        "column": 24
+                      },
+                      "end": {
+                        "line": 141,
+                        "column": 42
+                      },
+                      "identifierName": "updateProductPrice"
+                    },
+                    "name": "updateProductPrice"
+                  },
+                  "arguments": []
+                }
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "directives": []
+  },
+  "comments": [
+    {
+      "type": "CommentBlock",
+      "value": "*\n * A product\n * @typedef {Object} product\n * @property {number} id - an unique id number for the product\n * @property {string} title - the name of a product\n * @property {number} price - the price of a product in AUD to two decimal places\n ",
+      "start": 0,
+      "end": 246,
+      "loc": {
+        "start": {
+          "line": 1,
+          "column": 0
+        },
+        "end": {
+          "line": 7,
+          "column": 3
+        }
+      }
+    },
+    {
+      "type": "CommentBlock",
+      "value": "*\n * A customer\n * @typedef {Object} customer\n * @property {string} firstName - the first given name of the customer\n * @property {string} lastName - the surname of the customer\n * @property {address} address - the customer's {@link address} for billing and delivery purposes\n * @property {order[]} orders - an array of {@link order}s the customer has made\n * @property {string} customerNotes - a string containing any notes about the customer\n",
+      "start": 248,
+      "end": 696,
+      "loc": {
+        "start": {
+          "line": 9,
+          "column": 0
+        },
+        "end": {
+          "line": 17,
+          "column": 2
+        }
+      }
+    },
+    {
+      "type": "CommentBlock",
+      "value": "*\n * An address\n * @typedef {Object} address\n * @property {number} streetNumber - the alphanumeric indicator for a property\n * @property {string} streetName - the name of the street on which the customer's property is\n * @property {string} city - the city in which the customer's property is\n * @property {number} postcode - the government postal code for the area in which the customer's property resides\n ",
+      "start": 698,
+      "end": 1109,
+      "loc": {
+        "start": {
+          "line": 19,
+          "column": 0
+        },
+        "end": {
+          "line": 26,
+          "column": 3
+        }
+      }
+    },
+    {
+      "type": "CommentBlock",
+      "value": "*\n * An order\n * @typedef {Object} order\n * @property {number} id - a unique id number for the order\n * @property {string} status - an indicator of the status of the delivery such as delivered, processing, cancelled\n * @property {item[]} items - an array of {@link item}s\n * @property {string} notes - an arbitrary note from the customer regarding delivery of the order\n ",
+      "start": 1111,
+      "end": 1486,
+      "loc": {
+        "start": {
+          "line": 28,
+          "column": 0
+        },
+        "end": {
+          "line": 35,
+          "column": 3
+        }
+      }
+    },
+    {
+      "type": "CommentBlock",
+      "value": "*\n * An item which is part of an order\n * @typedef {Object} item\n * @property {number} productId - a unique numeric id for a product\n * @property {number} quantity - a number representing the quantity of the product for the order\n ",
+      "start": 1488,
+      "end": 1723,
+      "loc": {
+        "start": {
+          "line": 37,
+          "column": 0
+        },
+        "end": {
+          "line": 42,
+          "column": 3
+        }
+      }
+    },
+    {
+      "type": "CommentLine",
+      "value": " Add JSON to this variable",
+      "start": 1744,
+      "end": 1772,
+      "loc": {
+        "start": {
+          "line": 43,
+          "column": 20
+        },
+        "end": {
+          "line": 43,
+          "column": 48
+        }
+      }
+    },
+    {
+      "type": "CommentBlock",
+      "value": "*\n * Returns the title of the shop\n * @return {string} - the title of the shop\n ",
+      "start": 1774,
+      "end": 1858,
+      "loc": {
+        "start": {
+          "line": 45,
+          "column": 0
+        },
+        "end": {
+          "line": 48,
+          "column": 3
+        }
+      }
+    },
+    {
+      "type": "CommentLine",
+      "value": " Return the shop title (you have access to the shop object from here)",
+      "start": 1886,
+      "end": 1957,
+      "loc": {
+        "start": {
+          "line": 50,
+          "column": 4
+        },
+        "end": {
+          "line": 50,
+          "column": 75
+        }
+      }
+    },
+    {
+      "type": "CommentBlock",
+      "value": "*\n * Coverts a string to uppercase\n *  @param {string} inputString - a string to be converted to uppercase\n ",
+      "start": 1961,
+      "end": 2073,
+      "loc": {
+        "start": {
+          "line": 53,
+          "column": 0
+        },
+        "end": {
+          "line": 56,
+          "column": 3
+        }
+      }
+    },
+    {
+      "type": "CommentLine",
+      "value": " Return an uppercase version of string",
+      "start": 2112,
+      "end": 2152,
+      "loc": {
+        "start": {
+          "line": 58,
+          "column": 4
+        },
+        "end": {
+          "line": 58,
+          "column": 44
+        }
+      }
+    },
+    {
+      "type": "CommentBlock",
+      "value": "*\n * Returns the shop title in uppercase.\n * @return {string} an uppercase string\n ",
+      "start": 2156,
+      "end": 2243,
+      "loc": {
+        "start": {
+          "line": 61,
+          "column": 0
+        },
+        "end": {
+          "line": 64,
+          "column": 3
+        }
+      }
+    },
+    {
+      "type": "CommentLine",
+      "value": " Return an uppercase shop title.",
+      "start": 2280,
+      "end": 2314,
+      "loc": {
+        "start": {
+          "line": 66,
+          "column": 4
+        },
+        "end": {
+          "line": 66,
+          "column": 38
+        }
+      }
+    },
+    {
+      "type": "CommentLine",
+      "value": " Don't repeat yourself. Use the two functions you just built!",
+      "start": 2319,
+      "end": 2382,
+      "loc": {
+        "start": {
+          "line": 67,
+          "column": 4
+        },
+        "end": {
+          "line": 67,
+          "column": 67
+        }
+      }
+    },
+    {
+      "type": "CommentBlock",
+      "value": "*\n * takes a `productId` and returns the product corresponding to that id.\n * @param {number} productId - an id for a product\n * @return {Object} - returns a product object\n ",
+      "start": 2386,
+      "end": 2564,
+      "loc": {
+        "start": {
+          "line": 70,
+          "column": 0
+        },
+        "end": {
+          "line": 74,
+          "column": 3
+        }
+      }
+    },
+    {
+      "type": "CommentLine",
+      "value": " Return a specific product object",
+      "start": 2603,
+      "end": 2638,
+      "loc": {
+        "start": {
+          "line": 76,
+          "column": 4
+        },
+        "end": {
+          "line": 76,
+          "column": 39
+        }
+      }
+    },
+    {
+      "type": "CommentBlock",
+      "value": "*\n * takes a `productId` and returns the price of the product corresponding to that id.\n * @param {number} productId - an id for a product\n * @return {number} - returns a cost in AUD to two decimal places\n ",
+      "start": 2642,
+      "end": 2852,
+      "loc": {
+        "start": {
+          "line": 79,
+          "column": 0
+        },
+        "end": {
+          "line": 83,
+          "column": 3
+        }
+      }
+    },
+    {
+      "type": "CommentLine",
+      "value": " given a product id, return its cost. DRY ;)",
+      "start": 2891,
+      "end": 2937,
+      "loc": {
+        "start": {
+          "line": 85,
+          "column": 4
+        },
+        "end": {
+          "line": 85,
+          "column": 50
+        }
+      }
+    },
+    {
+      "type": "CommentBlock",
+      "value": "*\n * returns an customer address in a format appropriate for putting on an envelope\n * @param {string} customerEmail - a customer email which is the key for a customer record\n * @return {address} returns a {@link address} in a format appropriate for putting on an envelope\n *\n ",
+      "start": 2941,
+      "end": 3222,
+      "loc": {
+        "start": {
+          "line": 88,
+          "column": 0
+        },
+        "end": {
+          "line": 93,
+          "column": 3
+        }
+      }
+    },
+    {
+      "type": "CommentLine",
+      "value": " return(drinkShop.customers.'jane@doe.com'.address.(streetNumber, street, city, postcode))",
+      "start": 3267,
+      "end": 3359,
+      "loc": {
+        "start": {
+          "line": 95,
+          "column": 4
+        },
+        "end": {
+          "line": 95,
+          "column": 96
+        }
+      }
+    },
+    {
+      "type": "CommentLine",
+      "value": " Given a user's email, return their address in the format:",
+      "start": 3364,
+      "end": 3424,
+      "loc": {
+        "start": {
+          "line": 96,
+          "column": 4
+        },
+        "end": {
+          "line": 96,
+          "column": 64
+        }
+      }
+    },
+    {
+      "type": "CommentLine",
+      "value": " streetNumber street, city, postcode",
+      "start": 3429,
+      "end": 3467,
+      "loc": {
+        "start": {
+          "line": 97,
+          "column": 4
+        },
+        "end": {
+          "line": 97,
+          "column": 42
+        }
+      }
+    },
+    {
+      "type": "CommentLine",
+      "value": " E.g. 10 Amelia St, Sydney, 2000",
+      "start": 3472,
+      "end": 3506,
+      "loc": {
+        "start": {
+          "line": 98,
+          "column": 4
+        },
+        "end": {
+          "line": 98,
+          "column": 38
+        }
+      }
+    },
+    {
+      "type": "CommentLine",
+      "value": " Hint: some destructuring might save you a few lines.",
+      "start": 3511,
+      "end": 3566,
+      "loc": {
+        "start": {
+          "line": 99,
+          "column": 4
+        },
+        "end": {
+          "line": 99,
+          "column": 59
+        }
+      }
+    },
+    {
+      "type": "CommentBlock",
+      "value": "*\n * returns the total cost of an order which is the sum of all products contained in an order\n * @param {string} customerEmail - a customer email which is the key for a customer record\n * @param {number} orderId - an id number corresponding to an order\n * @return {number} the total cost of the order in AUD to two decimal places\n ",
+      "start": 3570,
+      "end": 3906,
+      "loc": {
+        "start": {
+          "line": 102,
+          "column": 0
+        },
+        "end": {
+          "line": 107,
+          "column": 3
+        }
+      }
+    },
+    {
+      "type": "CommentLine",
+      "value": " Return the total cost of an order.",
+      "start": 3956,
+      "end": 3993,
+      "loc": {
+        "start": {
+          "line": 109,
+          "column": 4
+        },
+        "end": {
+          "line": 109,
+          "column": 41
+        }
+      }
+    },
+    {
+      "type": "CommentBlock",
+      "value": "*\n * adds a product to the products object\n * @param {number} id - a unique numeric id for a product\n * @param {string} title - the title of the product\n * @param {number} price - the price of the product in AUD to two decimal places\n ",
+      "start": 3997,
+      "end": 4236,
+      "loc": {
+        "start": {
+          "line": 112,
+          "column": 0
+        },
+        "end": {
+          "line": 117,
+          "column": 3
+        }
+      }
+    },
+    {
+      "type": "CommentLine",
+      "value": " Add a product to the shop.",
+      "start": 4281,
+      "end": 4310,
+      "loc": {
+        "start": {
+          "line": 119,
+          "column": 4
+        },
+        "end": {
+          "line": 119,
+          "column": 33
+        }
+      }
+    },
+    {
+      "type": "CommentBlock",
+      "value": "*\n * updates the price of a product in the products object\n * @param {number} id - the id for a product in the products object\n * @param {number} newPrice - the new price for a product in AUD to two decimal places\n ",
+      "start": 4314,
+      "end": 4533,
+      "loc": {
+        "start": {
+          "line": 122,
+          "column": 0
+        },
+        "end": {
+          "line": 126,
+          "column": 3
+        }
+      }
+    },
+    {
+      "type": "CommentLine",
+      "value": " Update the price of a specific product",
+      "start": 4582,
+      "end": 4623,
+      "loc": {
+        "start": {
+          "line": 128,
+          "column": 4
+        },
+        "end": {
+          "line": 128,
+          "column": 45
+        }
+      }
+    }
+  ],
+  "tokens": [
+    {
+      "type": "CommentBlock",
+      "value": "*\n * A product\n * @typedef {Object} product\n * @property {number} id - an unique id number for the product\n * @property {string} title - the name of a product\n * @property {number} price - the price of a product in AUD to two decimal places\n ",
+      "start": 0,
+      "end": 246,
+      "loc": {
+        "start": {
+          "line": 1,
+          "column": 0
+        },
+        "end": {
+          "line": 7,
+          "column": 3
+        }
+      }
+    },
+    {
+      "type": "CommentBlock",
+      "value": "*\n * A customer\n * @typedef {Object} customer\n * @property {string} firstName - the first given name of the customer\n * @property {string} lastName - the surname of the customer\n * @property {address} address - the customer's {@link address} for billing and delivery purposes\n * @property {order[]} orders - an array of {@link order}s the customer has made\n * @property {string} customerNotes - a string containing any notes about the customer\n",
+      "start": 248,
+      "end": 696,
+      "loc": {
+        "start": {
+          "line": 9,
+          "column": 0
+        },
+        "end": {
+          "line": 17,
+          "column": 2
+        }
+      }
+    },
+    {
+      "type": "CommentBlock",
+      "value": "*\n * An address\n * @typedef {Object} address\n * @property {number} streetNumber - the alphanumeric indicator for a property\n * @property {string} streetName - the name of the street on which the customer's property is\n * @property {string} city - the city in which the customer's property is\n * @property {number} postcode - the government postal code for the area in which the customer's property resides\n ",
+      "start": 698,
+      "end": 1109,
+      "loc": {
+        "start": {
+          "line": 19,
+          "column": 0
+        },
+        "end": {
+          "line": 26,
+          "column": 3
+        }
+      }
+    },
+    {
+      "type": "CommentBlock",
+      "value": "*\n * An order\n * @typedef {Object} order\n * @property {number} id - a unique id number for the order\n * @property {string} status - an indicator of the status of the delivery such as delivered, processing, cancelled\n * @property {item[]} items - an array of {@link item}s\n * @property {string} notes - an arbitrary note from the customer regarding delivery of the order\n ",
+      "start": 1111,
+      "end": 1486,
+      "loc": {
+        "start": {
+          "line": 28,
+          "column": 0
+        },
+        "end": {
+          "line": 35,
+          "column": 3
+        }
+      }
+    },
+    {
+      "type": "CommentBlock",
+      "value": "*\n * An item which is part of an order\n * @typedef {Object} item\n * @property {number} productId - a unique numeric id for a product\n * @property {number} quantity - a number representing the quantity of the product for the order\n ",
+      "start": 1488,
+      "end": 1723,
+      "loc": {
+        "start": {
+          "line": 37,
+          "column": 0
+        },
+        "end": {
+          "line": 42,
+          "column": 3
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "const",
+        "keyword": "const",
+        "beforeExpr": false,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "value": "const",
+      "start": 1724,
+      "end": 1729,
+      "loc": {
+        "start": {
+          "line": 43,
+          "column": 0
+        },
+        "end": {
+          "line": 43,
+          "column": 5
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "name",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "value": "shopData",
+      "start": 1730,
+      "end": 1738,
+      "loc": {
+        "start": {
+          "line": 43,
+          "column": 6
+        },
+        "end": {
+          "line": 43,
+          "column": 14
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "=",
+        "beforeExpr": true,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": true,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "value": "=",
+      "start": 1739,
+      "end": 1740,
+      "loc": {
+        "start": {
+          "line": 43,
+          "column": 15
+        },
+        "end": {
+          "line": 43,
+          "column": 16
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "{",
+        "beforeExpr": true,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "start": 1741,
+      "end": 1742,
+      "loc": {
+        "start": {
+          "line": 43,
+          "column": 17
+        },
+        "end": {
+          "line": 43,
+          "column": 18
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "}",
+        "beforeExpr": false,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "start": 1742,
+      "end": 1743,
+      "loc": {
+        "start": {
+          "line": 43,
+          "column": 18
+        },
+        "end": {
+          "line": 43,
+          "column": 19
+        }
+      }
+    },
+    {
+      "type": "CommentLine",
+      "value": " Add JSON to this variable",
+      "start": 1744,
+      "end": 1772,
+      "loc": {
+        "start": {
+          "line": 43,
+          "column": 20
+        },
+        "end": {
+          "line": 43,
+          "column": 48
+        }
+      }
+    },
+    {
+      "type": "CommentBlock",
+      "value": "*\n * Returns the title of the shop\n * @return {string} - the title of the shop\n ",
+      "start": 1774,
+      "end": 1858,
+      "loc": {
+        "start": {
+          "line": 45,
+          "column": 0
+        },
+        "end": {
+          "line": 48,
+          "column": 3
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "function",
+        "keyword": "function",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "value": "function",
+      "start": 1859,
+      "end": 1867,
+      "loc": {
+        "start": {
+          "line": 49,
+          "column": 0
+        },
+        "end": {
+          "line": 49,
+          "column": 8
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "name",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "value": "shopTitle",
+      "start": 1868,
+      "end": 1877,
+      "loc": {
+        "start": {
+          "line": 49,
+          "column": 9
+        },
+        "end": {
+          "line": 49,
+          "column": 18
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "(",
+        "beforeExpr": true,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "start": 1877,
+      "end": 1878,
+      "loc": {
+        "start": {
+          "line": 49,
+          "column": 18
+        },
+        "end": {
+          "line": 49,
+          "column": 19
+        }
+      }
+    },
+    {
+      "type": {
+        "label": ")",
+        "beforeExpr": false,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "start": 1878,
+      "end": 1879,
+      "loc": {
+        "start": {
+          "line": 49,
+          "column": 19
+        },
+        "end": {
+          "line": 49,
+          "column": 20
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "{",
+        "beforeExpr": true,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "start": 1880,
+      "end": 1881,
+      "loc": {
+        "start": {
+          "line": 49,
+          "column": 21
+        },
+        "end": {
+          "line": 49,
+          "column": 22
+        }
+      }
+    },
+    {
+      "type": "CommentLine",
+      "value": " Return the shop title (you have access to the shop object from here)",
+      "start": 1886,
+      "end": 1957,
+      "loc": {
+        "start": {
+          "line": 50,
+          "column": 4
+        },
+        "end": {
+          "line": 50,
+          "column": 75
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "}",
+        "beforeExpr": false,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "start": 1958,
+      "end": 1959,
+      "loc": {
+        "start": {
+          "line": 51,
+          "column": 0
+        },
+        "end": {
+          "line": 51,
+          "column": 1
+        }
+      }
+    },
+    {
+      "type": "CommentBlock",
+      "value": "*\n * Coverts a string to uppercase\n *  @param {string} inputString - a string to be converted to uppercase\n ",
+      "start": 1961,
+      "end": 2073,
+      "loc": {
+        "start": {
+          "line": 53,
+          "column": 0
+        },
+        "end": {
+          "line": 56,
+          "column": 3
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "function",
+        "keyword": "function",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "value": "function",
+      "start": 2074,
+      "end": 2082,
+      "loc": {
+        "start": {
+          "line": 57,
+          "column": 0
+        },
+        "end": {
+          "line": 57,
+          "column": 8
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "name",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "value": "upperCase",
+      "start": 2083,
+      "end": 2092,
+      "loc": {
+        "start": {
+          "line": 57,
+          "column": 9
+        },
+        "end": {
+          "line": 57,
+          "column": 18
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "(",
+        "beforeExpr": true,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "start": 2092,
+      "end": 2093,
+      "loc": {
+        "start": {
+          "line": 57,
+          "column": 18
+        },
+        "end": {
+          "line": 57,
+          "column": 19
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "name",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "value": "inputString",
+      "start": 2093,
+      "end": 2104,
+      "loc": {
+        "start": {
+          "line": 57,
+          "column": 19
+        },
+        "end": {
+          "line": 57,
+          "column": 30
+        }
+      }
+    },
+    {
+      "type": {
+        "label": ")",
+        "beforeExpr": false,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "start": 2104,
+      "end": 2105,
+      "loc": {
+        "start": {
+          "line": 57,
+          "column": 30
+        },
+        "end": {
+          "line": 57,
+          "column": 31
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "{",
+        "beforeExpr": true,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "start": 2106,
+      "end": 2107,
+      "loc": {
+        "start": {
+          "line": 57,
+          "column": 32
+        },
+        "end": {
+          "line": 57,
+          "column": 33
+        }
+      }
+    },
+    {
+      "type": "CommentLine",
+      "value": " Return an uppercase version of string",
+      "start": 2112,
+      "end": 2152,
+      "loc": {
+        "start": {
+          "line": 58,
+          "column": 4
+        },
+        "end": {
+          "line": 58,
+          "column": 44
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "}",
+        "beforeExpr": false,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "start": 2153,
+      "end": 2154,
+      "loc": {
+        "start": {
+          "line": 59,
+          "column": 0
+        },
+        "end": {
+          "line": 59,
+          "column": 1
+        }
+      }
+    },
+    {
+      "type": "CommentBlock",
+      "value": "*\n * Returns the shop title in uppercase.\n * @return {string} an uppercase string\n ",
+      "start": 2156,
+      "end": 2243,
+      "loc": {
+        "start": {
+          "line": 61,
+          "column": 0
+        },
+        "end": {
+          "line": 64,
+          "column": 3
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "function",
+        "keyword": "function",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "value": "function",
+      "start": 2244,
+      "end": 2252,
+      "loc": {
+        "start": {
+          "line": 65,
+          "column": 0
+        },
+        "end": {
+          "line": 65,
+          "column": 8
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "name",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "value": "upperCaseShopTitle",
+      "start": 2253,
+      "end": 2271,
+      "loc": {
+        "start": {
+          "line": 65,
+          "column": 9
+        },
+        "end": {
+          "line": 65,
+          "column": 27
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "(",
+        "beforeExpr": true,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "start": 2271,
+      "end": 2272,
+      "loc": {
+        "start": {
+          "line": 65,
+          "column": 27
+        },
+        "end": {
+          "line": 65,
+          "column": 28
+        }
+      }
+    },
+    {
+      "type": {
+        "label": ")",
+        "beforeExpr": false,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "start": 2272,
+      "end": 2273,
+      "loc": {
+        "start": {
+          "line": 65,
+          "column": 28
+        },
+        "end": {
+          "line": 65,
+          "column": 29
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "{",
+        "beforeExpr": true,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "start": 2274,
+      "end": 2275,
+      "loc": {
+        "start": {
+          "line": 65,
+          "column": 30
+        },
+        "end": {
+          "line": 65,
+          "column": 31
+        }
+      }
+    },
+    {
+      "type": "CommentLine",
+      "value": " Return an uppercase shop title.",
+      "start": 2280,
+      "end": 2314,
+      "loc": {
+        "start": {
+          "line": 66,
+          "column": 4
+        },
+        "end": {
+          "line": 66,
+          "column": 38
+        }
+      }
+    },
+    {
+      "type": "CommentLine",
+      "value": " Don't repeat yourself. Use the two functions you just built!",
+      "start": 2319,
+      "end": 2382,
+      "loc": {
+        "start": {
+          "line": 67,
+          "column": 4
+        },
+        "end": {
+          "line": 67,
+          "column": 67
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "}",
+        "beforeExpr": false,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "start": 2383,
+      "end": 2384,
+      "loc": {
+        "start": {
+          "line": 68,
+          "column": 0
+        },
+        "end": {
+          "line": 68,
+          "column": 1
+        }
+      }
+    },
+    {
+      "type": "CommentBlock",
+      "value": "*\n * takes a `productId` and returns the product corresponding to that id.\n * @param {number} productId - an id for a product\n * @return {Object} - returns a product object\n ",
+      "start": 2386,
+      "end": 2564,
+      "loc": {
+        "start": {
+          "line": 70,
+          "column": 0
+        },
+        "end": {
+          "line": 74,
+          "column": 3
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "function",
+        "keyword": "function",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "value": "function",
+      "start": 2565,
+      "end": 2573,
+      "loc": {
+        "start": {
+          "line": 75,
+          "column": 0
+        },
+        "end": {
+          "line": 75,
+          "column": 8
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "name",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "value": "productById",
+      "start": 2574,
+      "end": 2585,
+      "loc": {
+        "start": {
+          "line": 75,
+          "column": 9
+        },
+        "end": {
+          "line": 75,
+          "column": 20
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "(",
+        "beforeExpr": true,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "start": 2585,
+      "end": 2586,
+      "loc": {
+        "start": {
+          "line": 75,
+          "column": 20
+        },
+        "end": {
+          "line": 75,
+          "column": 21
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "name",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "value": "productId",
+      "start": 2586,
+      "end": 2595,
+      "loc": {
+        "start": {
+          "line": 75,
+          "column": 21
+        },
+        "end": {
+          "line": 75,
+          "column": 30
+        }
+      }
+    },
+    {
+      "type": {
+        "label": ")",
+        "beforeExpr": false,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "start": 2595,
+      "end": 2596,
+      "loc": {
+        "start": {
+          "line": 75,
+          "column": 30
+        },
+        "end": {
+          "line": 75,
+          "column": 31
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "{",
+        "beforeExpr": true,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "start": 2597,
+      "end": 2598,
+      "loc": {
+        "start": {
+          "line": 75,
+          "column": 32
+        },
+        "end": {
+          "line": 75,
+          "column": 33
+        }
+      }
+    },
+    {
+      "type": "CommentLine",
+      "value": " Return a specific product object",
+      "start": 2603,
+      "end": 2638,
+      "loc": {
+        "start": {
+          "line": 76,
+          "column": 4
+        },
+        "end": {
+          "line": 76,
+          "column": 39
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "}",
+        "beforeExpr": false,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "start": 2639,
+      "end": 2640,
+      "loc": {
+        "start": {
+          "line": 77,
+          "column": 0
+        },
+        "end": {
+          "line": 77,
+          "column": 1
+        }
+      }
+    },
+    {
+      "type": "CommentBlock",
+      "value": "*\n * takes a `productId` and returns the price of the product corresponding to that id.\n * @param {number} productId - an id for a product\n * @return {number} - returns a cost in AUD to two decimal places\n ",
+      "start": 2642,
+      "end": 2852,
+      "loc": {
+        "start": {
+          "line": 79,
+          "column": 0
+        },
+        "end": {
+          "line": 83,
+          "column": 3
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "function",
+        "keyword": "function",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "value": "function",
+      "start": 2853,
+      "end": 2861,
+      "loc": {
+        "start": {
+          "line": 84,
+          "column": 0
+        },
+        "end": {
+          "line": 84,
+          "column": 8
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "name",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "value": "productCost",
+      "start": 2862,
+      "end": 2873,
+      "loc": {
+        "start": {
+          "line": 84,
+          "column": 9
+        },
+        "end": {
+          "line": 84,
+          "column": 20
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "(",
+        "beforeExpr": true,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "start": 2873,
+      "end": 2874,
+      "loc": {
+        "start": {
+          "line": 84,
+          "column": 20
+        },
+        "end": {
+          "line": 84,
+          "column": 21
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "name",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "value": "productId",
+      "start": 2874,
+      "end": 2883,
+      "loc": {
+        "start": {
+          "line": 84,
+          "column": 21
+        },
+        "end": {
+          "line": 84,
+          "column": 30
+        }
+      }
+    },
+    {
+      "type": {
+        "label": ")",
+        "beforeExpr": false,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "start": 2883,
+      "end": 2884,
+      "loc": {
+        "start": {
+          "line": 84,
+          "column": 30
+        },
+        "end": {
+          "line": 84,
+          "column": 31
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "{",
+        "beforeExpr": true,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "start": 2885,
+      "end": 2886,
+      "loc": {
+        "start": {
+          "line": 84,
+          "column": 32
+        },
+        "end": {
+          "line": 84,
+          "column": 33
+        }
+      }
+    },
+    {
+      "type": "CommentLine",
+      "value": " given a product id, return its cost. DRY ;)",
+      "start": 2891,
+      "end": 2937,
+      "loc": {
+        "start": {
+          "line": 85,
+          "column": 4
+        },
+        "end": {
+          "line": 85,
+          "column": 50
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "}",
+        "beforeExpr": false,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "start": 2938,
+      "end": 2939,
+      "loc": {
+        "start": {
+          "line": 86,
+          "column": 0
+        },
+        "end": {
+          "line": 86,
+          "column": 1
+        }
+      }
+    },
+    {
+      "type": "CommentBlock",
+      "value": "*\n * returns an customer address in a format appropriate for putting on an envelope\n * @param {string} customerEmail - a customer email which is the key for a customer record\n * @return {address} returns a {@link address} in a format appropriate for putting on an envelope\n *\n ",
+      "start": 2941,
+      "end": 3222,
+      "loc": {
+        "start": {
+          "line": 88,
+          "column": 0
+        },
+        "end": {
+          "line": 93,
+          "column": 3
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "function",
+        "keyword": "function",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "value": "function",
+      "start": 3223,
+      "end": 3231,
+      "loc": {
+        "start": {
+          "line": 94,
+          "column": 0
+        },
+        "end": {
+          "line": 94,
+          "column": 8
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "name",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "value": "formatAddress",
+      "start": 3232,
+      "end": 3245,
+      "loc": {
+        "start": {
+          "line": 94,
+          "column": 9
+        },
+        "end": {
+          "line": 94,
+          "column": 22
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "(",
+        "beforeExpr": true,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "start": 3245,
+      "end": 3246,
+      "loc": {
+        "start": {
+          "line": 94,
+          "column": 22
+        },
+        "end": {
+          "line": 94,
+          "column": 23
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "name",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "value": "customerEmail",
+      "start": 3246,
+      "end": 3259,
+      "loc": {
+        "start": {
+          "line": 94,
+          "column": 23
+        },
+        "end": {
+          "line": 94,
+          "column": 36
+        }
+      }
+    },
+    {
+      "type": {
+        "label": ")",
+        "beforeExpr": false,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "start": 3259,
+      "end": 3260,
+      "loc": {
+        "start": {
+          "line": 94,
+          "column": 36
+        },
+        "end": {
+          "line": 94,
+          "column": 37
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "{",
+        "beforeExpr": true,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "start": 3261,
+      "end": 3262,
+      "loc": {
+        "start": {
+          "line": 94,
+          "column": 38
+        },
+        "end": {
+          "line": 94,
+          "column": 39
+        }
+      }
+    },
+    {
+      "type": "CommentLine",
+      "value": " return(drinkShop.customers.'jane@doe.com'.address.(streetNumber, street, city, postcode))",
+      "start": 3267,
+      "end": 3359,
+      "loc": {
+        "start": {
+          "line": 95,
+          "column": 4
+        },
+        "end": {
+          "line": 95,
+          "column": 96
+        }
+      }
+    },
+    {
+      "type": "CommentLine",
+      "value": " Given a user's email, return their address in the format:",
+      "start": 3364,
+      "end": 3424,
+      "loc": {
+        "start": {
+          "line": 96,
+          "column": 4
+        },
+        "end": {
+          "line": 96,
+          "column": 64
+        }
+      }
+    },
+    {
+      "type": "CommentLine",
+      "value": " streetNumber street, city, postcode",
+      "start": 3429,
+      "end": 3467,
+      "loc": {
+        "start": {
+          "line": 97,
+          "column": 4
+        },
+        "end": {
+          "line": 97,
+          "column": 42
+        }
+      }
+    },
+    {
+      "type": "CommentLine",
+      "value": " E.g. 10 Amelia St, Sydney, 2000",
+      "start": 3472,
+      "end": 3506,
+      "loc": {
+        "start": {
+          "line": 98,
+          "column": 4
+        },
+        "end": {
+          "line": 98,
+          "column": 38
+        }
+      }
+    },
+    {
+      "type": "CommentLine",
+      "value": " Hint: some destructuring might save you a few lines.",
+      "start": 3511,
+      "end": 3566,
+      "loc": {
+        "start": {
+          "line": 99,
+          "column": 4
+        },
+        "end": {
+          "line": 99,
+          "column": 59
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "}",
+        "beforeExpr": false,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "start": 3567,
+      "end": 3568,
+      "loc": {
+        "start": {
+          "line": 100,
+          "column": 0
+        },
+        "end": {
+          "line": 100,
+          "column": 1
+        }
+      }
+    },
+    {
+      "type": "CommentBlock",
+      "value": "*\n * returns the total cost of an order which is the sum of all products contained in an order\n * @param {string} customerEmail - a customer email which is the key for a customer record\n * @param {number} orderId - an id number corresponding to an order\n * @return {number} the total cost of the order in AUD to two decimal places\n ",
+      "start": 3570,
+      "end": 3906,
+      "loc": {
+        "start": {
+          "line": 102,
+          "column": 0
+        },
+        "end": {
+          "line": 107,
+          "column": 3
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "function",
+        "keyword": "function",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "value": "function",
+      "start": 3907,
+      "end": 3915,
+      "loc": {
+        "start": {
+          "line": 108,
+          "column": 0
+        },
+        "end": {
+          "line": 108,
+          "column": 8
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "name",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "value": "totalCost",
+      "start": 3916,
+      "end": 3925,
+      "loc": {
+        "start": {
+          "line": 108,
+          "column": 9
+        },
+        "end": {
+          "line": 108,
+          "column": 18
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "(",
+        "beforeExpr": true,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "start": 3925,
+      "end": 3926,
+      "loc": {
+        "start": {
+          "line": 108,
+          "column": 18
+        },
+        "end": {
+          "line": 108,
+          "column": 19
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "name",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "value": "customerEmail",
+      "start": 3926,
+      "end": 3939,
+      "loc": {
+        "start": {
+          "line": 108,
+          "column": 19
+        },
+        "end": {
+          "line": 108,
+          "column": 32
+        }
+      }
+    },
+    {
+      "type": {
+        "label": ",",
+        "beforeExpr": true,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "start": 3939,
+      "end": 3940,
+      "loc": {
+        "start": {
+          "line": 108,
+          "column": 32
+        },
+        "end": {
+          "line": 108,
+          "column": 33
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "name",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "value": "orderId",
+      "start": 3941,
+      "end": 3948,
+      "loc": {
+        "start": {
+          "line": 108,
+          "column": 34
+        },
+        "end": {
+          "line": 108,
+          "column": 41
+        }
+      }
+    },
+    {
+      "type": {
+        "label": ")",
+        "beforeExpr": false,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "start": 3948,
+      "end": 3949,
+      "loc": {
+        "start": {
+          "line": 108,
+          "column": 41
+        },
+        "end": {
+          "line": 108,
+          "column": 42
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "{",
+        "beforeExpr": true,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "start": 3950,
+      "end": 3951,
+      "loc": {
+        "start": {
+          "line": 108,
+          "column": 43
+        },
+        "end": {
+          "line": 108,
+          "column": 44
+        }
+      }
+    },
+    {
+      "type": "CommentLine",
+      "value": " Return the total cost of an order.",
+      "start": 3956,
+      "end": 3993,
+      "loc": {
+        "start": {
+          "line": 109,
+          "column": 4
+        },
+        "end": {
+          "line": 109,
+          "column": 41
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "}",
+        "beforeExpr": false,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "start": 3994,
+      "end": 3995,
+      "loc": {
+        "start": {
+          "line": 110,
+          "column": 0
+        },
+        "end": {
+          "line": 110,
+          "column": 1
+        }
+      }
+    },
+    {
+      "type": "CommentBlock",
+      "value": "*\n * adds a product to the products object\n * @param {number} id - a unique numeric id for a product\n * @param {string} title - the title of the product\n * @param {number} price - the price of the product in AUD to two decimal places\n ",
+      "start": 3997,
+      "end": 4236,
+      "loc": {
+        "start": {
+          "line": 112,
+          "column": 0
+        },
+        "end": {
+          "line": 117,
+          "column": 3
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "function",
+        "keyword": "function",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "value": "function",
+      "start": 4237,
+      "end": 4245,
+      "loc": {
+        "start": {
+          "line": 118,
+          "column": 0
+        },
+        "end": {
+          "line": 118,
+          "column": 8
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "name",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "value": "addProduct",
+      "start": 4246,
+      "end": 4256,
+      "loc": {
+        "start": {
+          "line": 118,
+          "column": 9
+        },
+        "end": {
+          "line": 118,
+          "column": 19
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "(",
+        "beforeExpr": true,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "start": 4256,
+      "end": 4257,
+      "loc": {
+        "start": {
+          "line": 118,
+          "column": 19
+        },
+        "end": {
+          "line": 118,
+          "column": 20
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "name",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "value": "id",
+      "start": 4257,
+      "end": 4259,
+      "loc": {
+        "start": {
+          "line": 118,
+          "column": 20
+        },
+        "end": {
+          "line": 118,
+          "column": 22
+        }
+      }
+    },
+    {
+      "type": {
+        "label": ",",
+        "beforeExpr": true,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "start": 4259,
+      "end": 4260,
+      "loc": {
+        "start": {
+          "line": 118,
+          "column": 22
+        },
+        "end": {
+          "line": 118,
+          "column": 23
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "name",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "value": "title",
+      "start": 4261,
+      "end": 4266,
+      "loc": {
+        "start": {
+          "line": 118,
+          "column": 24
+        },
+        "end": {
+          "line": 118,
+          "column": 29
+        }
+      }
+    },
+    {
+      "type": {
+        "label": ",",
+        "beforeExpr": true,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "start": 4266,
+      "end": 4267,
+      "loc": {
+        "start": {
+          "line": 118,
+          "column": 29
+        },
+        "end": {
+          "line": 118,
+          "column": 30
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "name",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "value": "price",
+      "start": 4268,
+      "end": 4273,
+      "loc": {
+        "start": {
+          "line": 118,
+          "column": 31
+        },
+        "end": {
+          "line": 118,
+          "column": 36
+        }
+      }
+    },
+    {
+      "type": {
+        "label": ")",
+        "beforeExpr": false,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "start": 4273,
+      "end": 4274,
+      "loc": {
+        "start": {
+          "line": 118,
+          "column": 36
+        },
+        "end": {
+          "line": 118,
+          "column": 37
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "{",
+        "beforeExpr": true,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "start": 4275,
+      "end": 4276,
+      "loc": {
+        "start": {
+          "line": 118,
+          "column": 38
+        },
+        "end": {
+          "line": 118,
+          "column": 39
+        }
+      }
+    },
+    {
+      "type": "CommentLine",
+      "value": " Add a product to the shop.",
+      "start": 4281,
+      "end": 4310,
+      "loc": {
+        "start": {
+          "line": 119,
+          "column": 4
+        },
+        "end": {
+          "line": 119,
+          "column": 33
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "}",
+        "beforeExpr": false,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "start": 4311,
+      "end": 4312,
+      "loc": {
+        "start": {
+          "line": 120,
+          "column": 0
+        },
+        "end": {
+          "line": 120,
+          "column": 1
+        }
+      }
+    },
+    {
+      "type": "CommentBlock",
+      "value": "*\n * updates the price of a product in the products object\n * @param {number} id - the id for a product in the products object\n * @param {number} newPrice - the new price for a product in AUD to two decimal places\n ",
+      "start": 4314,
+      "end": 4533,
+      "loc": {
+        "start": {
+          "line": 122,
+          "column": 0
+        },
+        "end": {
+          "line": 126,
+          "column": 3
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "function",
+        "keyword": "function",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "value": "function",
+      "start": 4534,
+      "end": 4542,
+      "loc": {
+        "start": {
+          "line": 127,
+          "column": 0
+        },
+        "end": {
+          "line": 127,
+          "column": 8
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "name",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "value": "updateProductPrice",
+      "start": 4543,
+      "end": 4561,
+      "loc": {
+        "start": {
+          "line": 127,
+          "column": 9
+        },
+        "end": {
+          "line": 127,
+          "column": 27
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "(",
+        "beforeExpr": true,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "start": 4561,
+      "end": 4562,
+      "loc": {
+        "start": {
+          "line": 127,
+          "column": 27
+        },
+        "end": {
+          "line": 127,
+          "column": 28
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "name",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "value": "id",
+      "start": 4562,
+      "end": 4564,
+      "loc": {
+        "start": {
+          "line": 127,
+          "column": 28
+        },
+        "end": {
+          "line": 127,
+          "column": 30
+        }
+      }
+    },
+    {
+      "type": {
+        "label": ",",
+        "beforeExpr": true,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "start": 4564,
+      "end": 4565,
+      "loc": {
+        "start": {
+          "line": 127,
+          "column": 30
+        },
+        "end": {
+          "line": 127,
+          "column": 31
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "name",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "value": "newPrice",
+      "start": 4566,
+      "end": 4574,
+      "loc": {
+        "start": {
+          "line": 127,
+          "column": 32
+        },
+        "end": {
+          "line": 127,
+          "column": 40
+        }
+      }
+    },
+    {
+      "type": {
+        "label": ")",
+        "beforeExpr": false,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "start": 4574,
+      "end": 4575,
+      "loc": {
+        "start": {
+          "line": 127,
+          "column": 40
+        },
+        "end": {
+          "line": 127,
+          "column": 41
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "{",
+        "beforeExpr": true,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "start": 4576,
+      "end": 4577,
+      "loc": {
+        "start": {
+          "line": 127,
+          "column": 42
+        },
+        "end": {
+          "line": 127,
+          "column": 43
+        }
+      }
+    },
+    {
+      "type": "CommentLine",
+      "value": " Update the price of a specific product",
+      "start": 4582,
+      "end": 4623,
+      "loc": {
+        "start": {
+          "line": 128,
+          "column": 4
+        },
+        "end": {
+          "line": 128,
+          "column": 45
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "}",
+        "beforeExpr": false,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "start": 4624,
+      "end": 4625,
+      "loc": {
+        "start": {
+          "line": 129,
+          "column": 0
+        },
+        "end": {
+          "line": 129,
+          "column": 1
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "name",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "value": "module",
+      "start": 4628,
+      "end": 4634,
+      "loc": {
+        "start": {
+          "line": 132,
+          "column": 0
+        },
+        "end": {
+          "line": 132,
+          "column": 6
+        }
+      }
+    },
+    {
+      "type": {
+        "label": ".",
+        "beforeExpr": false,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "start": 4634,
+      "end": 4635,
+      "loc": {
+        "start": {
+          "line": 132,
+          "column": 6
+        },
+        "end": {
+          "line": 132,
+          "column": 7
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "name",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "value": "exports",
+      "start": 4635,
+      "end": 4642,
+      "loc": {
+        "start": {
+          "line": 132,
+          "column": 7
+        },
+        "end": {
+          "line": 132,
+          "column": 14
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "=",
+        "beforeExpr": true,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": true,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "value": "=",
+      "start": 4643,
+      "end": 4644,
+      "loc": {
+        "start": {
+          "line": 132,
+          "column": 15
+        },
+        "end": {
+          "line": 132,
+          "column": 16
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "{",
+        "beforeExpr": true,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "start": 4645,
+      "end": 4646,
+      "loc": {
+        "start": {
+          "line": 132,
+          "column": 17
+        },
+        "end": {
+          "line": 132,
+          "column": 18
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "name",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "value": "shopTitle",
+      "start": 4651,
+      "end": 4660,
+      "loc": {
+        "start": {
+          "line": 133,
+          "column": 4
+        },
+        "end": {
+          "line": 133,
+          "column": 13
+        }
+      }
+    },
+    {
+      "type": {
+        "label": ":",
+        "beforeExpr": true,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "start": 4660,
+      "end": 4661,
+      "loc": {
+        "start": {
+          "line": 133,
+          "column": 13
+        },
+        "end": {
+          "line": 133,
+          "column": 14
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "name",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "value": "shopTitle",
+      "start": 4662,
+      "end": 4671,
+      "loc": {
+        "start": {
+          "line": 133,
+          "column": 15
+        },
+        "end": {
+          "line": 133,
+          "column": 24
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "(",
+        "beforeExpr": true,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "start": 4671,
+      "end": 4672,
+      "loc": {
+        "start": {
+          "line": 133,
+          "column": 24
+        },
+        "end": {
+          "line": 133,
+          "column": 25
+        }
+      }
+    },
+    {
+      "type": {
+        "label": ")",
+        "beforeExpr": false,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "start": 4672,
+      "end": 4673,
+      "loc": {
+        "start": {
+          "line": 133,
+          "column": 25
+        },
+        "end": {
+          "line": 133,
+          "column": 26
+        }
+      }
+    },
+    {
+      "type": {
+        "label": ",",
+        "beforeExpr": true,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "start": 4673,
+      "end": 4674,
+      "loc": {
+        "start": {
+          "line": 133,
+          "column": 26
+        },
+        "end": {
+          "line": 133,
+          "column": 27
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "name",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "value": "upperCase",
+      "start": 4679,
+      "end": 4688,
+      "loc": {
+        "start": {
+          "line": 134,
+          "column": 4
+        },
+        "end": {
+          "line": 134,
+          "column": 13
+        }
+      }
+    },
+    {
+      "type": {
+        "label": ":",
+        "beforeExpr": true,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "start": 4688,
+      "end": 4689,
+      "loc": {
+        "start": {
+          "line": 134,
+          "column": 13
+        },
+        "end": {
+          "line": 134,
+          "column": 14
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "name",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "value": "upperCase",
+      "start": 4690,
+      "end": 4699,
+      "loc": {
+        "start": {
+          "line": 134,
+          "column": 15
+        },
+        "end": {
+          "line": 134,
+          "column": 24
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "(",
+        "beforeExpr": true,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "start": 4699,
+      "end": 4700,
+      "loc": {
+        "start": {
+          "line": 134,
+          "column": 24
+        },
+        "end": {
+          "line": 134,
+          "column": 25
+        }
+      }
+    },
+    {
+      "type": {
+        "label": ")",
+        "beforeExpr": false,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "start": 4700,
+      "end": 4701,
+      "loc": {
+        "start": {
+          "line": 134,
+          "column": 25
+        },
+        "end": {
+          "line": 134,
+          "column": 26
+        }
+      }
+    },
+    {
+      "type": {
+        "label": ",",
+        "beforeExpr": true,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "start": 4701,
+      "end": 4702,
+      "loc": {
+        "start": {
+          "line": 134,
+          "column": 26
+        },
+        "end": {
+          "line": 134,
+          "column": 27
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "name",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "value": "upperCaseShopTitle",
+      "start": 4707,
+      "end": 4725,
+      "loc": {
+        "start": {
+          "line": 135,
+          "column": 4
+        },
+        "end": {
+          "line": 135,
+          "column": 22
+        }
+      }
+    },
+    {
+      "type": {
+        "label": ":",
+        "beforeExpr": true,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "start": 4725,
+      "end": 4726,
+      "loc": {
+        "start": {
+          "line": 135,
+          "column": 22
+        },
+        "end": {
+          "line": 135,
+          "column": 23
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "name",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "value": "upperCaseShopTitle",
+      "start": 4727,
+      "end": 4745,
+      "loc": {
+        "start": {
+          "line": 135,
+          "column": 24
+        },
+        "end": {
+          "line": 135,
+          "column": 42
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "(",
+        "beforeExpr": true,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "start": 4745,
+      "end": 4746,
+      "loc": {
+        "start": {
+          "line": 135,
+          "column": 42
+        },
+        "end": {
+          "line": 135,
+          "column": 43
+        }
+      }
+    },
+    {
+      "type": {
+        "label": ")",
+        "beforeExpr": false,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "start": 4746,
+      "end": 4747,
+      "loc": {
+        "start": {
+          "line": 135,
+          "column": 43
+        },
+        "end": {
+          "line": 135,
+          "column": 44
+        }
+      }
+    },
+    {
+      "type": {
+        "label": ",",
+        "beforeExpr": true,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "start": 4747,
+      "end": 4748,
+      "loc": {
+        "start": {
+          "line": 135,
+          "column": 44
+        },
+        "end": {
+          "line": 135,
+          "column": 45
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "name",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "value": "productById",
+      "start": 4753,
+      "end": 4764,
+      "loc": {
+        "start": {
+          "line": 136,
+          "column": 4
+        },
+        "end": {
+          "line": 136,
+          "column": 15
+        }
+      }
+    },
+    {
+      "type": {
+        "label": ":",
+        "beforeExpr": true,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "start": 4764,
+      "end": 4765,
+      "loc": {
+        "start": {
+          "line": 136,
+          "column": 15
+        },
+        "end": {
+          "line": 136,
+          "column": 16
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "name",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "value": "productById",
+      "start": 4766,
+      "end": 4777,
+      "loc": {
+        "start": {
+          "line": 136,
+          "column": 17
+        },
+        "end": {
+          "line": 136,
+          "column": 28
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "(",
+        "beforeExpr": true,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "start": 4777,
+      "end": 4778,
+      "loc": {
+        "start": {
+          "line": 136,
+          "column": 28
+        },
+        "end": {
+          "line": 136,
+          "column": 29
+        }
+      }
+    },
+    {
+      "type": {
+        "label": ")",
+        "beforeExpr": false,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "start": 4778,
+      "end": 4779,
+      "loc": {
+        "start": {
+          "line": 136,
+          "column": 29
+        },
+        "end": {
+          "line": 136,
+          "column": 30
+        }
+      }
+    },
+    {
+      "type": {
+        "label": ",",
+        "beforeExpr": true,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "start": 4779,
+      "end": 4780,
+      "loc": {
+        "start": {
+          "line": 136,
+          "column": 30
+        },
+        "end": {
+          "line": 136,
+          "column": 31
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "name",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "value": "productCost",
+      "start": 4785,
+      "end": 4796,
+      "loc": {
+        "start": {
+          "line": 137,
+          "column": 4
+        },
+        "end": {
+          "line": 137,
+          "column": 15
+        }
+      }
+    },
+    {
+      "type": {
+        "label": ":",
+        "beforeExpr": true,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "start": 4796,
+      "end": 4797,
+      "loc": {
+        "start": {
+          "line": 137,
+          "column": 15
+        },
+        "end": {
+          "line": 137,
+          "column": 16
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "name",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "value": "productCost",
+      "start": 4798,
+      "end": 4809,
+      "loc": {
+        "start": {
+          "line": 137,
+          "column": 17
+        },
+        "end": {
+          "line": 137,
+          "column": 28
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "(",
+        "beforeExpr": true,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "start": 4809,
+      "end": 4810,
+      "loc": {
+        "start": {
+          "line": 137,
+          "column": 28
+        },
+        "end": {
+          "line": 137,
+          "column": 29
+        }
+      }
+    },
+    {
+      "type": {
+        "label": ")",
+        "beforeExpr": false,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "start": 4810,
+      "end": 4811,
+      "loc": {
+        "start": {
+          "line": 137,
+          "column": 29
+        },
+        "end": {
+          "line": 137,
+          "column": 30
+        }
+      }
+    },
+    {
+      "type": {
+        "label": ",",
+        "beforeExpr": true,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "start": 4811,
+      "end": 4812,
+      "loc": {
+        "start": {
+          "line": 137,
+          "column": 30
+        },
+        "end": {
+          "line": 137,
+          "column": 31
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "name",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "value": "formatAddress",
+      "start": 4817,
+      "end": 4830,
+      "loc": {
+        "start": {
+          "line": 138,
+          "column": 4
+        },
+        "end": {
+          "line": 138,
+          "column": 17
+        }
+      }
+    },
+    {
+      "type": {
+        "label": ":",
+        "beforeExpr": true,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "start": 4830,
+      "end": 4831,
+      "loc": {
+        "start": {
+          "line": 138,
+          "column": 17
+        },
+        "end": {
+          "line": 138,
+          "column": 18
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "name",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "value": "formatAddress",
+      "start": 4832,
+      "end": 4845,
+      "loc": {
+        "start": {
+          "line": 138,
+          "column": 19
+        },
+        "end": {
+          "line": 138,
+          "column": 32
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "(",
+        "beforeExpr": true,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "start": 4845,
+      "end": 4846,
+      "loc": {
+        "start": {
+          "line": 138,
+          "column": 32
+        },
+        "end": {
+          "line": 138,
+          "column": 33
+        }
+      }
+    },
+    {
+      "type": {
+        "label": ")",
+        "beforeExpr": false,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "start": 4846,
+      "end": 4847,
+      "loc": {
+        "start": {
+          "line": 138,
+          "column": 33
+        },
+        "end": {
+          "line": 138,
+          "column": 34
+        }
+      }
+    },
+    {
+      "type": {
+        "label": ",",
+        "beforeExpr": true,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "start": 4847,
+      "end": 4848,
+      "loc": {
+        "start": {
+          "line": 138,
+          "column": 34
+        },
+        "end": {
+          "line": 138,
+          "column": 35
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "name",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "value": "totalCost",
+      "start": 4853,
+      "end": 4862,
+      "loc": {
+        "start": {
+          "line": 139,
+          "column": 4
+        },
+        "end": {
+          "line": 139,
+          "column": 13
+        }
+      }
+    },
+    {
+      "type": {
+        "label": ":",
+        "beforeExpr": true,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "start": 4862,
+      "end": 4863,
+      "loc": {
+        "start": {
+          "line": 139,
+          "column": 13
+        },
+        "end": {
+          "line": 139,
+          "column": 14
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "name",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "value": "totalCost",
+      "start": 4864,
+      "end": 4873,
+      "loc": {
+        "start": {
+          "line": 139,
+          "column": 15
+        },
+        "end": {
+          "line": 139,
+          "column": 24
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "(",
+        "beforeExpr": true,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "start": 4873,
+      "end": 4874,
+      "loc": {
+        "start": {
+          "line": 139,
+          "column": 24
+        },
+        "end": {
+          "line": 139,
+          "column": 25
+        }
+      }
+    },
+    {
+      "type": {
+        "label": ")",
+        "beforeExpr": false,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "start": 4874,
+      "end": 4875,
+      "loc": {
+        "start": {
+          "line": 139,
+          "column": 25
+        },
+        "end": {
+          "line": 139,
+          "column": 26
+        }
+      }
+    },
+    {
+      "type": {
+        "label": ",",
+        "beforeExpr": true,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "start": 4875,
+      "end": 4876,
+      "loc": {
+        "start": {
+          "line": 139,
+          "column": 26
+        },
+        "end": {
+          "line": 139,
+          "column": 27
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "name",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "value": "addProduct",
+      "start": 4881,
+      "end": 4891,
+      "loc": {
+        "start": {
+          "line": 140,
+          "column": 4
+        },
+        "end": {
+          "line": 140,
+          "column": 14
+        }
+      }
+    },
+    {
+      "type": {
+        "label": ":",
+        "beforeExpr": true,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "start": 4891,
+      "end": 4892,
+      "loc": {
+        "start": {
+          "line": 140,
+          "column": 14
+        },
+        "end": {
+          "line": 140,
+          "column": 15
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "name",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "value": "addProduct",
+      "start": 4893,
+      "end": 4903,
+      "loc": {
+        "start": {
+          "line": 140,
+          "column": 16
+        },
+        "end": {
+          "line": 140,
+          "column": 26
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "(",
+        "beforeExpr": true,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "start": 4903,
+      "end": 4904,
+      "loc": {
+        "start": {
+          "line": 140,
+          "column": 26
+        },
+        "end": {
+          "line": 140,
+          "column": 27
+        }
+      }
+    },
+    {
+      "type": {
+        "label": ")",
+        "beforeExpr": false,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "start": 4904,
+      "end": 4905,
+      "loc": {
+        "start": {
+          "line": 140,
+          "column": 27
+        },
+        "end": {
+          "line": 140,
+          "column": 28
+        }
+      }
+    },
+    {
+      "type": {
+        "label": ",",
+        "beforeExpr": true,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "start": 4905,
+      "end": 4906,
+      "loc": {
+        "start": {
+          "line": 140,
+          "column": 28
+        },
+        "end": {
+          "line": 140,
+          "column": 29
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "name",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "value": "updateProductPrice",
+      "start": 4911,
+      "end": 4929,
+      "loc": {
+        "start": {
+          "line": 141,
+          "column": 4
+        },
+        "end": {
+          "line": 141,
+          "column": 22
+        }
+      }
+    },
+    {
+      "type": {
+        "label": ":",
+        "beforeExpr": true,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "start": 4929,
+      "end": 4930,
+      "loc": {
+        "start": {
+          "line": 141,
+          "column": 22
+        },
+        "end": {
+          "line": 141,
+          "column": 23
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "name",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "value": "updateProductPrice",
+      "start": 4931,
+      "end": 4949,
+      "loc": {
+        "start": {
+          "line": 141,
+          "column": 24
+        },
+        "end": {
+          "line": 141,
+          "column": 42
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "(",
+        "beforeExpr": true,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "start": 4949,
+      "end": 4950,
+      "loc": {
+        "start": {
+          "line": 141,
+          "column": 42
+        },
+        "end": {
+          "line": 141,
+          "column": 43
+        }
+      }
+    },
+    {
+      "type": {
+        "label": ")",
+        "beforeExpr": false,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "start": 4950,
+      "end": 4951,
+      "loc": {
+        "start": {
+          "line": 141,
+          "column": 43
+        },
+        "end": {
+          "line": 141,
+          "column": 44
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "}",
+        "beforeExpr": false,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "start": 4952,
+      "end": 4953,
+      "loc": {
+        "start": {
+          "line": 142,
+          "column": 0
+        },
+        "end": {
+          "line": 142,
+          "column": 1
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "eof",
+        "beforeExpr": false,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "start": 4955,
+      "end": 4955,
+      "loc": {
+        "start": {
+          "line": 144,
+          "column": 0
+        },
+        "end": {
+          "line": 144,
+          "column": 0
+        }
+      }
+    }
+  ]
+}

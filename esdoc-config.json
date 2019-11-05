@@ -1,0 +1,21 @@
+{
+  "source": "./src",
+  "destination": "./doc",
+  "includes": [".*\\.js", ".*\\.jsx"],
+  "package": "./package.json",
+  "index": "./README.md",
+  "unexportIdentifier": true,
+  "plugins": [
+    {"name": "esdoc-standard-plugin",
+    "option": {
+      "lint": {"enable": true},
+      "coverage": {"enable": true},
+      "accessor": {"access": ["public", "protected", "private"], "autoPrivate": true},
+      "undocumentIdentifier": {"enable": true},
+      "unexportedIdentifier": {"enable": true},
+      "typeInference": {"enable": true}
+    }
+    },
+    {"name": "esdoc-ecmascript-proposal-plugin", "option": {"all": true}}
+  ]
+}

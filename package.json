@@ -1,0 +1,19 @@
+{
+  "name": "drink-shop",
+  "version": "1.0.0",
+  "description": "",
+  "main": "drinkshop.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npm i && http-server ./doc -p 8000 && echo 'Open your web browser on localhost:8000'"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "esdoc": "^1.1.0",
+    "esdoc-ecmascript-proposal-plugin": "^1.0.0",
+    "esdoc-standard-plugin": "^1.0.0",
+    "http-server": "^0.11.1"
+  }
+}
