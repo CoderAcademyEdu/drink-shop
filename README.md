@@ -8,7 +8,7 @@ As an extension activity for this task you should create this application as an 
 
 ## View the Documentation Online
 
-See https://github.io/CoderAcademyEdu/drink-shop/docs
+See https://coderacademyedu.github.io/drink-shop/docs/
 
 ## How to Run the Documentation for this Challenge Locally
 
